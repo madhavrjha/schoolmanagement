@@ -1,0 +1,297 @@
+body {
+  background-color: #fff;
+}
+
+/* 
+ =========================================================================================================================
+  header 
+ =========================================================================================================================
+*/
+
+header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: #fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.98rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.8s;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: var(--brand-icon-height);
+}
+
+header ul {
+  height: var(--brand-icon-height);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 5rem;
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 1rem;
+  position: relative;
+}
+
+header li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--theme-primary-color);
+}
+
+header a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: var(--theme-primary-color);
+}
+
+header .btn {
+  padding: 0.6rem 1.6rem;
+  border-radius: 2rem;
+}
+
+/* Sticky Part */
+
+header.sticky {
+  height: 60px;
+}
+
+header.sticky img {
+  height: 30px;
+}
+
+header.sticky .btn {
+  padding: 0.3rem 1.1rem;
+}
+
+/* 
+ =========================================================================================================================
+  Section#call-to-action 
+ =========================================================================================================================
+*/
+
+#call-to-action {
+  --call-to-action-height: 110vh;
+}
+
+#call-to-action {
+  width: 100%;
+  height: var(--call-to-action-height);
+  padding-top: calc(3rem + var(--header-height));
+  padding-bottom: 3rem;
+  background: url("../images/download.png") no-repeat center top/cover;
+  position: relative;
+}
+
+#call-to-action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--call-to-action-height);
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+#call-to-action::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--call-to-action-height);
+  background: url("../images/pencils-1.png") no-repeat center bottom/contain;
+}
+
+#call-to-action p,
+#call-to-action h1,
+#call-to-action a {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+#call-to-action .container p:first-child {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  line-height: 2rem;
+  color: var(--theme-primary-color);
+  margin-top: 7rem;
+}
+
+#call-to-action h1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 50px;
+}
+
+#call-to-action p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding: 0 10rem;
+  font-weight: 400;
+}
+
+/* #call-to-action * {
+  border: 1px solid red;
+} */
+
+#call-to-action .container > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#call-to-action .btn {
+  padding: 0.8rem 2rem;
+}
+
+/* 
+ =========================================================================================================================
+  Section#hero 
+ =========================================================================================================================
+*/
+
+#hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
+
+#hero article {
+  position: relative;
+  padding: 6rem;
+}
+
+#hero article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hero article:nth-child(1)::after {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset -30rem 0 20rem rgba(255, 255, 255, 0.5);
+}
+
+#hero article:nth-child(2)::after {
+  background: rgba(78, 136, 255, 0.5);
+  box-shadow: inset 30rem 0rem 20rem 0 rgba(78, 136, 255, 1);
+}
+
+#hero article:nth-child(1) {
+  background: url("../images/hero-1.jfif") no-repeat center center/cover;
+}
+
+#hero article:nth-child(2) {
+  background: url("../images/hero-2.jfif") no-repeat center center/cover;
+}
+
+#hero h1,
+#hero p,
+#hero a {
+  position: relative;
+  z-index: 3;
+}
+
+/* Heading */
+
+#hero h1 {
+  font-family: "Cabin Sketch", display;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 6px;
+  line-height: 1.5em;
+}
+
+#hero article:nth-child(1) h1 {
+  color: #333;
+}
+
+#hero article:nth-child(2) h1 {
+  color: #fff;
+}
+
+/* Paragraphs */
+
+#hero p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  line-height: 2em;
+}
+
+#hero article:nth-child(1) p {
+  color: #333;
+}
+
+#hero article:nth-child(2) p {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+/* Buttons */
+
+#hero .btn {
+  padding: 0.8rem 1.7rem;
+}
+
+#hero article:nth-child(1) .btn {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#hero article:nth-child(1) .btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#hero article:nth-child(2) .btn {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--theme-primary-alt-color);
+}
+
+#hero article:nth-child(2) .btn:hover {
+  background: rgba(255, 255, 0255, 0.9);
+}
+
+/* Div */
+
+#hero article > div {
+  margin-top: 3rem;
+}

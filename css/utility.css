@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+
+/* 
+ =========================================================================================================================
+  Main Setting 
+ =========================================================================================================================
+*/
+
+:root {
+  --header-height: 70px;
+  --brand-icon-height: 40px;
+}
+
+:root {
+  /* Orange Theme */
+  --theme-primary-color: #ff7335;
+  --theme-primary-light-1: #ff8c5b;
+}
+
+:root {
+  /* Blue Theme */
+  --theme-primary-color: #4e88ff;
+  --theme-primary-light-1: #76a4ff;
+  --theme-primary-alt-color: #222744;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+ =========================================================================================================================
+  Button
+ =========================================================================================================================
+*/
+
+.btn {
+  background-color: var(--theme-primary-color);
+  font-weight: bold;
+  color: #fff;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: #fff;
+}
