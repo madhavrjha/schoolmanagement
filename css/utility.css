@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
 /* 
  =========================================================================================================================
@@ -24,6 +25,10 @@
   --theme-primary-color: #4e88ff;
   --theme-primary-light-1: #76a4ff;
   --theme-primary-alt-color: #222744;
+  --theme-hero-box-shadow-color: #4e88ffff;
+  --theme-statement-box-shadow-color: #4e88ff32;
+  --theme-principal-box-shadow-color: #222744cc;
+  --theme-hero-bg-color: #4e88ff88;
 }
 
 * {

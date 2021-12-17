@@ -213,8 +213,8 @@ header.sticky .btn {
 }
 
 #hero article:nth-child(2)::after {
-  background: rgba(78, 136, 255, 0.5);
-  box-shadow: inset 30rem 0rem 20rem 0 rgba(78, 136, 255, 1);
+  background: var(--theme-hero-bg-color);
+  box-shadow: inset 30rem 0rem 20rem 0 var(--theme-hero-box-shadow-color);
 }
 
 #hero article:nth-child(1) {
@@ -294,4 +294,495 @@ header.sticky .btn {
 
 #hero article > div {
   margin-top: 3rem;
+}
+
+/* 
+ =========================================================================================================================
+  Section#statements
+ =========================================================================================================================
+*/
+
+#statements {
+  padding: 6rem 0;
+  background: url("../images/shapes-bg-color.png") repeat center top/cover;
+  position: relative;
+}
+
+#statements::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 40rem 40rem var(--theme-statement-box-shadow-color);
+}
+
+#statements * {
+  position: relative;
+  z-index: 2;
+}
+
+#statements i {
+  display: block;
+  margin: 1rem auto 2rem;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--theme-primary-color);
+  text-align: center;
+}
+
+#statements h3 {
+  font-family: "Cabin Sketch", display;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.5em;
+  color: var(--theme-primary-color);
+  text-align: center;
+}
+
+#statements h1 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #333;
+  text-align: center;
+}
+
+#statements p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  line-height: 2;
+  padding: 0 18rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+#statements .container > div {
+  display: flex;
+  justify-content: center;
+}
+
+#statements .btn {
+  display: block;
+  text-align: center;
+  width: auto;
+  padding: 0.9rem 1.7rem;
+  font-size: 1.1rem;
+}
+
+/* 
+ =========================================================================================================================
+  Section#principal
+ =========================================================================================================================
+*/
+
+#principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
+
+#principal article:nth-child(1) {
+  padding: 6rem;
+  background: url("../images/principal-2.jfif") no-repeat center center/cover;
+  position: relative;
+}
+
+#principal article:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme-principal-box-shadow-color);
+}
+
+#principal article:nth-child(1) * {
+  position: relative;
+  z-index: 2;
+}
+
+#principal article:nth-child(1) > div {
+  position: relative;
+  padding: 1rem 0;
+  padding-left: 3rem;
+  color: #fff;
+}
+
+#principal article:nth-child(1) > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.5rem;
+  height: 100%;
+  background: var(--theme-primary-color);
+}
+
+#principal article:nth-child(1) > div p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.2em;
+  font-size: 1.1rem;
+}
+
+#principal article:nth-child(1) > div h2 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-style: 40px;
+  text-transform: capitalize;
+}
+
+#principal article:nth-child(1) > div blockquote {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 2.2em;
+}
+
+#principal article:nth-child(1) > div blockquote::before,
+#principal article:nth-child(1) > div blockquote::after {
+  content: " ” ";
+}
+
+#principal article:nth-child(1) > p {
+  text-align: right;
+  color: #fff;
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+#principal article:nth-child(2) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* 
+ =========================================================================================================================
+  Section#events
+ =========================================================================================================================
+*/
+
+#events .top {
+  background: url("../images/notice-section.jfif") no-repeat center center/cover;
+  min-height: 36rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+#events .top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 20rem 20rem var(--theme-statement-box-shadow-color);
+  z-index: 1;
+}
+
+#events .top * {
+  position: relative;
+  z-index: 2;
+}
+
+#events .top i {
+  display: block;
+  margin: 1rem auto;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--theme-primary-color);
+  text-align: center;
+}
+
+#events .top p {
+  font-family: "Cabin Sketch", display;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 1.4em;
+}
+
+#events .top h1 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  padding: 0 20rem;
+  text-align: center;
+  font-weight: 700;
+  font-style: 40px;
+  line-height: 1.4em;
+  color: #333;
+}
+
+#events .bottom {
+  background-color: #e3e2e8;
+  min-height: 50rem;
+  padding: 2rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+#events .bottom .box:nth-child(6n + 1),
+#events .bottom .box:nth-child(6n + 2),
+#events .bottom .box:nth-child(6n + 3),
+#events .bottom .box:nth-child(6n + 4),
+#events .bottom .box:nth-child(6n + 5),
+#events .bottom .box:nth-child(6n + 6) {
+  position: relative;
+}
+
+#events .bottom .box:nth-child(6n + 1)::after,
+#events .bottom .box:nth-child(6n + 2)::after,
+#events .bottom .box:nth-child(6n + 3)::after,
+#events .bottom .box:nth-child(6n + 4)::after,
+#events .bottom .box:nth-child(6n + 5)::after,
+#events .bottom .box:nth-child(6n + 6)::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#events .bottom .box:nth-child(6n + 1) *,
+#events .bottom .box:nth-child(6n + 2) *,
+#events .bottom .box:nth-child(6n + 3) *,
+#events .bottom .box:nth-child(6n + 4) *,
+#events .bottom .box:nth-child(6n + 5) *,
+#events .bottom .box:nth-child(6n + 6) * {
+  position: relative;
+  z-index: 2;
+}
+
+#events .bottom .box:nth-child(6n + 1) {
+  background-color: #ff9c02;
+}
+
+#events .bottom .box:nth-child(6n + 2) {
+  background-color: #2b7cdf;
+}
+
+#events .bottom .box:nth-child(6n + 3) {
+  background-color: #74bc19;
+}
+
+#events .bottom .box:nth-child(6n + 4) {
+  background-color: #7f5aff;
+}
+
+#events .bottom .box:nth-child(6n + 5) {
+  background-color: #ff7355;
+}
+
+#events .bottom .box:nth-child(6n + 6) {
+  background-color: #466177;
+}
+
+#events .bottom .box {
+  padding: 2rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#events .bottom .box p:first-child {
+  background: rgba(255, 255, 255, 0.2);
+  width: 50%;
+  border-radius: 1.7rem;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: 16px;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+#events .bottom .box span {
+  font-family: "Cabin Sketch", display;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 80px;
+  display: block;
+  text-align: center;
+}
+
+#events .bottom .box h2 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+/* 
+ =========================================================================================================================
+  Section#get-in-touch
+ =========================================================================================================================
+*/
+
+#get-in-touch {
+  padding: 5rem 0;
+  background: url("../images/principal-2.jfif") no-repeat center center/cover;
+}
+
+#get-in-touch .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+#get-in-touch .container article:nth-child(1) {
+  margin-left: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#get-in-touch .container article:nth-child(1) div {
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #fff;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#get-in-touch .container article:nth-child(1) div:nth-child(1) {
+  background-color: #2b76df;
+}
+
+#get-in-touch .container article:nth-child(1) div:nth-child(2) {
+  background-color: #ff7355;
+}
+
+#get-in-touch .container article:nth-child(1) div:nth-child(3) {
+  background-color: #ff9c02;
+}
+
+#get-in-touch .container article:nth-child(1) div:nth-child(4) {
+  background-color: #74bc19;
+}
+
+#get-in-touch .container article:nth-child(1) div h2 {
+  font-family: "Cabin Sketch", display;
+  font-weight: 500;
+  font-size: 54px;
+}
+
+#get-in-touch .container article:nth-child(1) div p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+#get-in-touch .container article:nth-child(2) {
+  background-color: #fff;
+  margin-right: 5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#get-in-touch .container article:nth-child(2) h2 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+#get-in-touch .container article:nth-child(2) p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+#get-in-touch .container article:nth-child(2) .btn {
+  padding: 0.8rem 1.6rem;
+}
+
+#get-in-touch .policy {
+  padding: 3em 20rem 5rem 20rem;
+}
+
+#get-in-touch .policy p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+}
+
+#get-in-touch .policy p:nth-child(2) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  line-height: 2em;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* 
+ =========================================================================================================================
+  Section#get-in-touch
+ =========================================================================================================================
+*/
+
+footer {
+  background: #1f1f1f;
+  padding: 1rem;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+footer li {
+  margin-right: 1rem;
+}
+
+footer a {
+  font-size: 1.4rem;
+  color: #666;
 }
