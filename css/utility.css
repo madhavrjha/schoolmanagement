@@ -11,6 +11,7 @@
 
 :root {
   --header-height: 70px;
+  --header-transition-time: 1s;
   --brand-icon-height: 40px;
 }
 
