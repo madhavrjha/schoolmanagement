@@ -15,13 +15,13 @@ header {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: #fff;
+  /* background-color: #fff; */
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2); */
   transition: all 0.8s;
 }
 
@@ -81,6 +81,8 @@ header .btn {
 
 header.sticky {
   height: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 header.sticky img {
@@ -785,4 +787,226 @@ footer li {
 footer a {
   font-size: 1.4rem;
   color: #666;
+}
+
+/* 
+ =========================================================================================================================
+  Section#staff-hero
+ =========================================================================================================================
+*/
+
+#staff-hero {
+  padding: calc(3rem + var(--header-height)) 0 3rem;
+  background: url("../images/staff-hero-bg.jfif") no-repeat center center/cover;
+  position: relative;
+}
+
+#staff-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0rem -20rem 10rem rgba(255, 255, 255, 0.5),
+    inset 40rem 0 10rem rgba(255, 255, 0255, 0.9);
+}
+
+#staff-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+#staff-hero .container {
+  min-height: 45vh;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#staff-hero .container p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 0.5em;
+}
+
+#staff-hero .container h2 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5em;
+}
+
+#staff-hero .container p:nth-child(3) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 1.7em;
+  font-weight: 500;
+  color: #666;
+}
+
+#staff-hero .container .btn {
+  padding: 1rem 1.8rem;
+  font-size: 16px;
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif !important;
+}
+
+/* 
+ =========================================================================================================================
+  Section#staff-statements
+ =========================================================================================================================
+*/
+
+#staff-statements {
+  padding: 5rem 0;
+  background: #3a5063;
+}
+
+#staff-statements .container {
+  padding: 0 8rem;
+}
+
+#staff-statements .images {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+#staff-statements .images > div {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+#staff-statements .images img {
+  width: 100%;
+}
+
+#staff-statements .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  color: #fff;
+}
+
+#staff-statements .content div:nth-child(1) p {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.2em;
+  font-size: 16px;
+}
+
+#staff-statements .content div:nth-child(1) h2 {
+  font-size: 26px;
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4em;
+}
+
+#staff-statements .content div:nth-child(2) p {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+/* 
+ =========================================================================================================================
+  Section#our-staff
+ =========================================================================================================================
+*/
+
+#our-staff {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+#our-staff .container {
+  padding: 0 8rem;
+}
+
+#our-staff .container > p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#our-staff .container > h2 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #333;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#our-staff .container > p {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  line-height: 2em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2em;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+#our-staff .staffs {
+  margin: 2rem auto;
+  display: grid;
+  margin-bottom: 4rem;
+}
+
+#our-staff .staffs.management {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+#our-staff .staffs.educator {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+#our-staff .staffs.other {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+#our-staff .staffs img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#our-staff .staffs p {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  color: #4c5c67;
+  line-height: 1.7em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#our-staff .staffs h6 {
+  color: #aaa;
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  line-height: 2em;
 }
