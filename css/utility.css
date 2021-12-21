@@ -19,6 +19,11 @@
   /* Orange Theme */
   --theme-primary-color: #ff7335;
   --theme-primary-light-1: #ff8c5b;
+  --theme-primary-alt-color: #6e2506;
+  --theme-hero-box-shadow-color: #ff7335ff;
+  --theme-statement-box-shadow-color: #ff733532;
+  --theme-principal-box-shadow-color: #6e2506cc;
+  --theme-hero-bg-color: #ff733588;
 }
 
 :root {
