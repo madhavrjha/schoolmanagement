@@ -2298,3 +2298,118 @@ footer a {
   background: rgb(0 0 0 / 5%);
   opacity: 1;
 }
+
+/* 
+ =========================================================================================================================
+  Section#gallery-hero
+ =========================================================================================================================
+*/
+
+#gallery-hero {
+  background: url("../images/shapes-bg-color.png");
+  min-height: 65vh;
+  padding: calc(3rem + var(--header-height)) 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#gallery-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#gallery-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+#gallery-hero p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 2em;
+  margin-bottom: 0;
+}
+
+#gallery-hero h1 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4em;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+
+#gallery-hero p:nth-child(3) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  color: #444;
+  line-height: 2em;
+  font-weight: 500;
+  max-width: 800px;
+}
+
+/* 
+ =========================================================================================================================
+  Section#gallery-media
+ =========================================================================================================================
+*/
+
+#gallery-media {
+  padding: 3rem 0;
+  background: url("../images/shapes-bg.png") no-repeat center center/cover;
+}
+
+#gallery-media h2 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4em;
+  color: #333;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+#gallery-media .gallery-box {
+  padding: 0 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#gallery-media .gallery-box > a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+#gallery-media .gallery-box img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  cursor: pointer;
+  filter: grayscale(0.3);
+  transition: all 0.5s;
+}
+
+#gallery-media .gallery-box img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0) saturate(120%);
+}
