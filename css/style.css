@@ -2638,3 +2638,60 @@ footer a {
   background: rgb(0 0 0 / 5%);
   opacity: 1;
 }
+
+/* 
+ =========================================================================================================================
+  Section#all-notice
+ =========================================================================================================================
+*/
+
+#all-notice {
+  padding: 3rem 0;
+  background: url("../images/shapes-bg.png") no-repeat center center/cover;
+}
+
+#all-notice h2 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4em;
+  color: #333;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+#all-notice .notice-box {
+  padding: 0 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+#all-notice .container .box {
+  padding: 1rem 2rem;
+  background: #fff;
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  line-height: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 12%);
+  overflow: hidden;
+  border-top: 10px solid var(--theme-primary-color);
+}
+
+#all-notice .box h2 {
+  color: #333;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+#all-notice .box > p:nth-child(2) {
+  color: var(--theme-primary-color);
+  margin: 0;
+  font-weight: 700;
+}
+
+#all-notice .box > p:nth-child(3) {
+  color: #444;
+}
