@@ -3008,3 +3008,116 @@ footer a {
   padding: 1rem !important;
   height: auto !important;
 }
+
+/* 
+ =========================================================================================================================
+  Section#sponsors-hero
+ =========================================================================================================================
+*/
+
+#sponsors-hero {
+  background: url("../images/shapes-bg-color.png");
+  min-height: 65vh;
+  padding: calc(3rem + var(--header-height)) 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#sponsors-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#sponsors-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+#sponsors-hero p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 2em;
+  margin-bottom: 0;
+}
+
+#sponsors-hero h1 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4em;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+#sponsors-hero p:nth-child(3) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #111;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7em;
+}
+
+/* 
+ =========================================================================================================================
+  Section#all-sponsors
+ =========================================================================================================================
+*/
+
+#all-sponsors {
+  padding: 3rem 0;
+  background: url("../images/shapes-bg.png");
+}
+
+#all-sponsors h2 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 3rem;
+}
+
+#all-sponsors .container {
+  padding: 1rem 6rem;
+}
+
+#all-sponsors .sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+#all-sponsors .sponsor-container > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px 4px rgba(0 0 0 / 7%);
+  overflow: hidden;
+}
+
+#all-sponsors .sponsor-container > div:hover img {
+  transform: scale(1.2);
+}
+
+#all-sponsors .container img {
+  width: 100%;
+  transition: all 0.5s;
+}
