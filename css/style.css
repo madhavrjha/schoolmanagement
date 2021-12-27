@@ -2695,3 +2695,316 @@ footer a {
 #all-notice .box > p:nth-child(3) {
   color: #444;
 }
+
+/* 
+ =========================================================================================================================
+  Section#alumni-hero
+ =========================================================================================================================
+*/
+
+#alumni-hero {
+  background: url("../images/shapes-bg-color.png");
+  min-height: 65vh;
+  padding: calc(3rem + var(--header-height)) 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#alumni-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#alumni-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+#alumni-hero p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 2em;
+  margin-bottom: 0;
+}
+
+#alumni-hero h1 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4em;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+#alumni-hero p:nth-child(3) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #111;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7em;
+}
+
+/* 
+ =========================================================================================================================
+  Section#alumni-people
+ =========================================================================================================================
+*/
+
+#alumni-people {
+  padding: 3rem 0;
+  background: url("../images/shapes-bg.png");
+}
+
+#alumni-people .container {
+  padding: 1rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+#alumni-people .alumni-box {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#alumni-people .alumni-box.card {
+  box-shadow: 0 0 3px 4px rgba(0 0 0 / 2%);
+}
+
+#alumni-people .alumni-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#alumni-people .alumni-box p:nth-child(2) {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #353535;
+  margin-bottom: 0;
+}
+
+#alumni-people .alumni-box p:nth-child(3) {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+#alumni-people .alumni-box i {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#alumni-people .alumni-box p:last-child {
+  height: 0;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  color: #555;
+  padding: 0;
+}
+
+.alumni-box-visible {
+  height: auto !important;
+  padding: 1rem !important;
+}
+
+/* 
+ =========================================================================================================================
+  Section#alumni-hero
+ =========================================================================================================================
+*/
+
+#wof-hero {
+  background: url("../images/shapes-bg-color.png");
+  min-height: 65vh;
+  padding: calc(3rem + var(--header-height)) 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#wof-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#wof-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+#wof-hero p:nth-child(1) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--theme-primary-color);
+  letter-spacing: 5px;
+  line-height: 2em;
+  margin-bottom: 0;
+}
+
+#wof-hero h1 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4em;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+#wof-hero p:nth-child(3) {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #111;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7em;
+}
+
+/* 
+ =========================================================================================================================
+  Section#wof-year
+ =========================================================================================================================
+*/
+
+#wof-year .container {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: end;
+}
+
+#wof-year .container div {
+  padding: 1rem;
+  background: rgba(0 0 0 / 2%);
+}
+
+#wof-year select,
+#wof-year option {
+  background: transparent;
+  border: none;
+  outline: none;
+  min-width: 200px;
+  font-size: 1.3rem;
+}
+
+/* 
+ =========================================================================================================================
+  Section#wof-people
+ =========================================================================================================================
+*/
+
+#wof-people {
+  padding: 3rem 0;
+  background: url("../images/shapes-bg.png");
+}
+
+#wof-people .container {
+  padding: 1rem 6rem;
+}
+
+#wof-people h1 {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4em;
+  color: #333;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#wof-people .wof-cards {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#wof-people .wof-card {
+  cursor: pointer;
+}
+
+#wof-people .wof-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+#wof-people .wof-card p:nth-child(2) {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #353535;
+  margin-bottom: 0;
+}
+
+#wof-people .wof-card p:nth-child(3) {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+#wof-people .wof-card i {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#wof-people .wof-card p:last-child {
+  height: 0;
+  padding: 0;
+  text-align: justify;
+  color: #555;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+#wof-people .wof-card .wof-card-visible {
+  padding: 1rem !important;
+  height: auto !important;
+}
