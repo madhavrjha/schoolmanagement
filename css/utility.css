@@ -10,9 +10,9 @@
 */
 
 :root {
-  --header-height: 70px;
+  --header-height: 60px;
   --header-transition-time: 1s;
-  --brand-icon-height: 40px;
+  --brand-icon-height: 30px;
 }
 
 :root {
