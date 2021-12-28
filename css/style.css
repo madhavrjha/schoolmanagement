@@ -104,6 +104,79 @@ header.sticky .btn {
 
 /* 
  =========================================================================================================================
+  aside 
+ =========================================================================================================================
+*/
+
+aside {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+aside.active {
+  left: 0;
+}
+
+aside > .container {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside > .container .btn {
+  margin-left: auto;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+aside > .container i {
+  font-size: 1.8rem;
+  color: var(--theme-primary-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+aside > .container i:hover {
+  color: red;
+}
+
+aside img {
+  height: 40px;
+}
+
+aside nav {
+  padding: 3rem 0 1rem;
+}
+
+aside nav ul {
+  list-style: none;
+}
+
+aside nav li {
+  padding-bottom: 1.5rem;
+}
+
+aside nav a {
+  text-decoration: none;
+  display: block;
+  color: #111;
+  width: 100%;
+  font-weight: bold;
+}
+
+aside nav li.active a {
+  color: var(--theme-primary-color);
+}
+
+/* 
+ =========================================================================================================================
   Section#call-to-action 
  =========================================================================================================================
 */

@@ -18,6 +18,21 @@ header.addEventListener('mouseenter', () => {
 header.addEventListener('mouseleave', () => {
   console.log('Mouse Leave');
   if(window.scrollY == 0) header.classList.remove('sticky');
+});
+
+
+// Click on Bars and Times
+
+const headerBars = document.querySelector('header .container > i');
+const headerTimes = document.querySelector('aside .container > i');
+const aside = document.querySelector('aside');
+
+headerBars.addEventListener('click', () => {
+  aside.classList.add('active');
+});
+
+headerTimes.addEventListener('click', () => {
+  aside.classList.remove('active');
 })
 
 
