@@ -3,3 +3,32 @@
   header 
  =========================================================================================================================
 */
+
+@media (max-width: 1400px) {
+  header {
+    --brand-icon-height: 35px;
+    font-size: 0.88rem;
+  }
+
+  header img {
+    height: var(--brand-icon-height);
+  }
+
+  header ul {
+    margin-right: 4rem;
+  }
+
+  header .btn {
+    padding: 0.4rem 1.4rem;
+    font-size: 0.88rem;
+  }
+
+  /* Sticky Part */
+  header.sticky {
+    height: 50px;
+  }
+
+  header.sticky img {
+    height: 30px;
+  }
+}
