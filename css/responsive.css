@@ -135,8 +135,9 @@
   #call-to-action,
   #call-to-action::after,
   #call-to-action::before {
-    --call-to-action-height: 100vh;
-    height: var(--call-to-action-height);
+    --call-to-action-height: 700px;
+    min-height: var(--call-to-action-height);
+    padding-bottom: 3rem;
   }
 
   #call-to-action .container p:nth-child(1) {
@@ -154,6 +155,7 @@
   #call-to-action::before {
     --call-to-action-height: 400px;
     min-height: var(--call-to-action-height);
+    padding-bottom: 3rem;
   }
 
   #call-to-action::before {
@@ -176,5 +178,11 @@
   #call-to-action .btn {
     padding: 0.5rem 1.2rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #call-to-action .container p:first-child {
+    margin-top: 0;
   }
 }
