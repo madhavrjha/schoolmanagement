@@ -186,3 +186,61 @@
     margin-top: 0;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#hero 
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #hero article {
+    padding: 4rem 3rem;
+  }
+
+  #hero h1 {
+    font-size: 30px;
+  }
+
+  #hero p {
+    font-size: 0.95rem;
+  }
+
+  #hero .btn {
+    padding: 0.5rem 1.3rem;
+  }
+
+  #hero article > div {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    grid-template-columns: 1fr;
+  }
+
+  #hero article {
+    padding: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero article {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero article {
+    padding: 3rem 10px;
+  }
+
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 0.9rem;
+  }
+}
