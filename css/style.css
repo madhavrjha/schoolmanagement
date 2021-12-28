@@ -79,6 +79,13 @@ header .btn {
   transition: all var(--header-transition-time);
 }
 
+header .container > i {
+  font-size: 2rem;
+  color: var(--theme-primary-color);
+  display: none;
+  transition: all var(--header-transition-time);
+}
+
 /* Sticky Part */
 
 header.sticky {
