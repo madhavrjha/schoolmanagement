@@ -82,3 +82,34 @@
     font-size: 0.88em;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#call-to-action 
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #call-to-action .container p:first-child {
+    margin-top: 5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  #call-to-action h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+
+  #call-to-action p:nth-child(3) {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0 8rem;
+  }
+
+  #call-to-action .btn {
+    padding: 0.6rem 1.6rem;
+  }
+}
