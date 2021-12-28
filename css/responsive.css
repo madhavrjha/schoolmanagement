@@ -319,3 +319,61 @@
     font-size: 0.85rem;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#principal
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #principal article:nth-child(1) {
+    padding: 4rem;
+  }
+
+  #principal article:nth-child(1) > div p {
+    font-size: 0.9rem;
+  }
+
+  #principal article:nth-child(1) > div h2 {
+    font-size: 1.2rem;
+  }
+
+  #principal article:nth-child(1) > div blockquote {
+    font-size: 0.9rem;
+  }
+
+  #principal article:nth-child(1) > p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #principal {
+    grid-template-columns: 5fr 4fr;
+  }
+}
+
+@media (max-width: 992px) {
+  #principal {
+    grid-template-columns: 1fr;
+  }
+
+  #principal article:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #principal article:nth-child(1) {
+    padding: 3rem 10px;
+  }
+
+  #principal article:nth-child(1) > div {
+    padding-left: 1.5rem;
+  }
+
+  #principal article:nth-child(1) > div::before {
+    width: 0.25rem;
+  }
+}
