@@ -705,14 +705,12 @@ aside nav li.active a {
   padding: 0 20rem;
   text-align: center;
   font-weight: 700;
-  font-style: 40px;
   line-height: 1.4em;
   color: #333;
 }
 
 #events .bottom {
   background-color: #e3e2e8;
-  min-height: 50rem;
   padding: 2rem 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -788,7 +786,7 @@ aside nav li.active a {
   width: 50%;
   border-radius: 1.7rem;
   font-family: "Rubik", Arial, Helvetica, sans-serif;
-  font-style: 16px;
+  font-size: 16px;
   text-align: center;
   padding-bottom: 1rem;
   font-weight: 500;

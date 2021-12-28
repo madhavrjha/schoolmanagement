@@ -457,3 +457,72 @@
     padding: 0.5rem 1.3rem;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#events
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #events .top i {
+    font-size: 1.5rem;
+  }
+
+  #events .top p {
+    font-size: 1.5rem;
+  }
+
+  #events .top h1 {
+    padding: 0 15rem;
+    font-size: 30px;
+  }
+
+  #events .bottom {
+    padding: 2rem 6rem;
+  }
+
+  #events .bottom .box {
+    padding: 1.5rem;
+  }
+
+  #events .bottom .box p:first-child {
+    font-size: 0.9rem;
+  }
+
+  #events .bottom .box span {
+    font-size: 54px;
+  }
+
+  #events .bottom .box h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #events .bottom {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #events .bottom {
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #events .bottom {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #events .bottom {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
