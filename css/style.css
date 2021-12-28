@@ -184,7 +184,7 @@ aside nav li.active a {
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--call-to-action-height);
+  height: 100%;
   background: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
@@ -196,7 +196,7 @@ aside nav li.active a {
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--call-to-action-height);
+  height: 100%;
   background: url("../images/pencils-1.png") no-repeat center bottom/contain;
 }
 

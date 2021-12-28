@@ -103,7 +103,7 @@
     line-height: 1.4;
   }
 
-  #call-to-action p:nth-child(3) {
+  #call-to-action .container p:nth-child(3) {
     font-size: 1rem;
     line-height: 2;
     padding: 0 8rem;
@@ -111,5 +111,70 @@
 
   #call-to-action .btn {
     padding: 0.6rem 1.6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #call-to-action,
+  #call-to-action::after,
+  #call-to-action::before {
+    --call-to-action-height: 100vh;
+    height: var(--call-to-action-height);
+  }
+
+  #call-to-action .container p:nth-child(1) {
+    margin-top: 4rem;
+  }
+
+  #call-to-action .container p:nth-child(3) {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #call-to-action,
+  #call-to-action::after,
+  #call-to-action::before {
+    --call-to-action-height: 100vh;
+    height: var(--call-to-action-height);
+  }
+
+  #call-to-action .container p:nth-child(1) {
+    margin-top: 3rem;
+  }
+
+  #call-to-action .container p:nth-child(3) {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #call-to-action,
+  #call-to-action::after,
+  #call-to-action::before {
+    --call-to-action-height: 400px;
+    min-height: var(--call-to-action-height);
+  }
+
+  #call-to-action::before {
+    display: none;
+  }
+
+  #call-to-action .container p:first-child {
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+
+  #call-to-action h1 {
+    font-size: 24px;
+  }
+
+  #call-to-action .container p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+
+  #call-to-action .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
