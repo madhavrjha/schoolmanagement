@@ -1461,8 +1461,7 @@ footer a {
 
 #about-hero .btn {
   color: #ffffff;
-  border-width: 15px;
-  border-color: rgba(210, 159, 104, 0);
+  padding: 1rem 2rem;
   border-radius: 100px;
   letter-spacing: 0px;
   font-size: 16px;
