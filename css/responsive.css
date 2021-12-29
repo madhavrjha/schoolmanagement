@@ -670,3 +670,62 @@
     order: -1;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#staff-hero
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #staff-hero .container {
+    padding-left: 60px;
+  }
+
+  #staff-hero .container p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+
+  #staff-hero .container h2 {
+    font-size: 2.5rem;
+  }
+
+  #staff-hero .container p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+
+  #staff-hero .container .btn {
+    padding: 0.6rem 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #staff-hero .container {
+    padding-left: 40px;
+  }
+
+  #staff-hero .container p:nth-child(3) {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  #staff-hero .container {
+    padding-left: 0;
+    min-height: 200px;
+  }
+
+  #staff-hero .container h2 {
+    font-size: 2rem;
+  }
+
+  #staff-hero .container .btn {
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #staff-hero .container {
+    padding: 10px;
+  }
+}
