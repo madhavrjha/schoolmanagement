@@ -1157,10 +1157,6 @@
     grid-template-columns: 1fr;
   }
 
-  #about-mission article:nth-child(2) {
-    display: none;
-  }
-
   #about-vision article:nth-child(2) h2 {
     font-size: 2rem;
   }
@@ -1169,5 +1165,219 @@
 @media (max-width: 576px) {
   #about-vision article:nth-child(2) {
     padding: 3rem 10px;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#about-alumni
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #about-alumni {
+    min-height: 550px;
+  }
+
+  #about-alumni article:nth-child(1) {
+    padding: 3rem;
+  }
+
+  #about-alumni article:nth-child(1) p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+
+  #about-alumni article:nth-child(1) h2 {
+    font-size: 32px;
+  }
+
+  #about-alumni article:nth-child(1) p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #about-alumni {
+    min-height: 450px;
+    grid-template-columns: 5fr 4fr;
+  }
+}
+
+@media (max-width: 992px) {
+  #about-alumni {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  #about-mission article:nth-child(2) {
+    display: none;
+  }
+
+  #about-alumni article:nth-child(1) h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #about-alumni article:nth-child(1) {
+    padding: 3rem 10px;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#about-wof
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #about-wof {
+    min-height: 550px;
+  }
+
+  #about-wof article:nth-child(2) {
+    padding: 3rem;
+  }
+
+  #about-wof article:nth-child(2) p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+
+  #about-wof article:nth-child(2) h2 {
+    font-size: 32px;
+  }
+
+  #about-wof article:nth-child(2) p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #about-wof {
+    min-height: 450px;
+    grid-template-columns: 5fr 4fr;
+  }
+
+  #about-wof article:nth-child(1) {
+    order: 2;
+  }
+}
+
+@media (max-width: 992px) {
+  #about-wof {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  #about-wof article:nth-child(1) {
+    display: none;
+  }
+
+  #about-wof article:nth-child(2) h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #about-wof article:nth-child(2) {
+    padding: 3rem 10px;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#about-curriculum
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #curriculum {
+    padding: 4rem 0;
+  }
+
+  #curriculum > i {
+    font-size: 1.5rem;
+  }
+
+  #curriculum > p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  #curriculum > h2 {
+    font-size: 32px;
+  }
+
+  #curriculum > p {
+    font-size: 0.9rem;
+  }
+
+  #curriculum .container {
+    padding: 3rem;
+    gap: 2rem;
+  }
+
+  #curriculum .container .box {
+    padding: 1.5rem;
+  }
+
+  #curriculum .box i {
+    font-size: 1.5rem;
+  }
+
+  #curriculum .box h2 {
+    font-size: 1rem;
+  }
+
+  #curriculum .box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #curriculum .container {
+    padding: 3rem 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #curriculum .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #curriculum > p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #curriculum {
+    padding: 3rem 0;
+  }
+
+  #curriculum > i {
+    font-size: 1.2rem;
+  }
+
+  #curriculum > p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  #curriculum > h2 {
+    font-size: 2rem;
+  }
+
+  #curriculum .container .box {
+    padding: 1.1rem;
+  }
+
+  #curriculum .box i {
+    font-size: 1.2rem;
+  }
+
+  #curriculum > p {
+    width: 100%;
+    padding: 0 10px;
   }
 }
