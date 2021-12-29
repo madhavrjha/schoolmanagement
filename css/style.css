@@ -1196,7 +1196,8 @@ footer a {
 */
 
 #contact-hero {
-  background: url("../images/contact-hero-bg.jfif") no-repeat center center/100%;
+  background: url("../images/contact-hero-bg.jfif") no-repeat center
+    center/cover;
   min-height: 65vh;
   padding: calc(3rem + var(--header-height)) 0 3rem;
   display: flex;
