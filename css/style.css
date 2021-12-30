@@ -2232,7 +2232,7 @@ footer a {
 
 #apply-form * {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 #apply-form > i {

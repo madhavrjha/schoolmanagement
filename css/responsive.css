@@ -1688,3 +1688,120 @@
     font-size: 24px;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#apply-form
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #apply-form > i {
+    font-size: 1.5rem;
+  }
+
+  #apply-form > p {
+    font-size: 1rem;
+  }
+
+  #apply-form > h2 {
+    font-size: 32px;
+  }
+
+  #apply-form .form-box {
+    margin: 3rem 8rem;
+  }
+
+  #apply-form .form-box h1 {
+    font-size: 32px;
+  }
+
+  #apply-form .form-box input[type="text"],
+  #apply-form .form-box input[type="email"],
+  #apply-form .form-box select {
+    font-size: 0.9rem;
+  }
+
+  #apply-form .form-box div div label {
+    font-size: 0.9rem;
+  }
+
+  #apply-form .form-box > div:last-child .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #apply-form .form-box {
+    margin: 3rem 5rem;
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #apply-form > h2 {
+    font-size: 24px;
+  }
+
+  #apply-form .form-box {
+    margin: 3rem;
+  }
+
+  #apply-form .form-box h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apply-form .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #apply-form .form-box > div {
+    margin-bottom: 0;
+  }
+
+  #apply-form .form-box > div:nth-child(1) {
+    order: 0;
+  }
+
+  #apply-form .form-box > div:nth-child(2) {
+    order: 1;
+  }
+
+  #apply-form .form-box > div:nth-child(3) {
+    order: 3;
+  }
+
+  #apply-form .form-box > div:nth-child(4) {
+    order: 2;
+  }
+
+  #apply-form .form-box > div:nth-child(5) {
+    order: 4;
+  }
+}
+
+@media (max-width: 576px) {
+  #apply-form {
+    padding: 2rem 0;
+  }
+  #apply-form .form-box {
+    margin: 3rem 10px;
+  }
+  #apply-form .form-box h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  #apply-form .form-box div div label {
+    display: inline-block;
+    width: 80%;
+    padding-left: 10px;
+  }
+}
