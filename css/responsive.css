@@ -1015,15 +1015,18 @@
 /* 
  =========================================================================================================================
   Section#about-hero
+  Section#gallery-hero
  =========================================================================================================================
 */
 
 @media (max-width: 1400px) {
-  #about-hero p {
+  #about-hero p,
+  #gallery-hero p:nth-child(1) {
     font-size: 0.9rem;
   }
 
-  #about-hero h1 {
+  #about-hero h1,
+  #gallery-hero h1 {
     font-size: 2.5rem;
   }
 
@@ -1031,17 +1034,27 @@
     font-size: 0.9rem;
     padding: 0.8rem 1.5rem;
   }
+
+  #gallery-hero p:nth-child(3) {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 992px) {
-  #about-hero {
+  #about-hero,
+  #gallery-hero {
     min-height: 300px;
     justify-content: center;
+  }
+
+  #gallery-hero p:nth-child(3) {
+    max-width: 90%;
   }
 }
 
 @media (max-width: 768px) {
-  #about-hero h1 {
+  #about-hero h1,
+  #gallery-hero h1 {
     font-size: 1.5rem;
   }
 
@@ -1051,7 +1064,8 @@
 }
 
 @media (max-width: 576px) {
-  #about-hero {
+  #about-hero,
+  #gallery-hero {
     padding: calc(3rem + var(--header-height)) 10px 3rem;
   }
 }
@@ -1803,5 +1817,46 @@
     display: inline-block;
     width: 80%;
     padding-left: 10px;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#gallery-media
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #gallery-media h2 {
+    font-size: 24px;
+  }
+
+  #gallery-media .gallery-box {
+    padding: 0 0 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #gallery-media .gallery-box img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  #gallery-media .gallery-box img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  #gallery-media .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #gallery-media .gallery-box {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 2rem;
   }
 }
