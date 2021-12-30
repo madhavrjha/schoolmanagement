@@ -1019,6 +1019,7 @@
   Section#sponsor-hero
   Section#alumni-hero
   Section#wof-hero
+  Section#sponsors-hero
  =========================================================================================================================
 */
 
@@ -1027,7 +1028,8 @@
   #gallery-hero p:nth-child(1),
   #sponsor-hero p:nth-child(1),
   #alumni-hero p:nth-child(1),
-  #wof-hero p:nth-child(1) {
+  #wof-hero p:nth-child(1),
+  #sponsors-hero p:nth-child(1) {
     font-size: 0.9rem;
   }
 
@@ -1035,7 +1037,8 @@
   #gallery-hero h1,
   #sponsor-hero h1,
   #alumni-hero h1,
-  #wof-hero h1 {
+  #wof-hero h1,
+  #sponsors-hero h1 {
     font-size: 2.5rem;
   }
 
@@ -1047,7 +1050,8 @@
   #gallery-hero p:nth-child(3),
   #sponsor-hero p:nth-child(3),
   #alumni-hero p:nth-child(3),
-  #wof-hero p:nth-child(3) {
+  #wof-hero p:nth-child(3),
+  #sponsors-hero p:nth-child(3) {
     font-size: 0.9rem;
   }
 }
@@ -1057,7 +1061,8 @@
   #gallery-hero,
   #sponsor-hero,
   #alumni-hero,
-  #wof-hero {
+  #wof-hero,
+  #sponsors-hero {
     min-height: 300px;
     justify-content: center;
   }
@@ -1065,7 +1070,8 @@
   #gallery-hero p:nth-child(3),
   #sponsor-hero p:nth-child(3),
   #alumni-hero p:nth-child(3),
-  #wof-hero p:nth-child(3) {
+  #wof-hero p:nth-child(3),
+  #sponsors-hero p:nth-child(3) {
     max-width: 90%;
   }
 }
@@ -1075,7 +1081,8 @@
   #gallery-hero h1,
   #sponsor-hero h1,
   #alumni-hero h1,
-  #wof-hero h1 {
+  #wof-hero h1,
+  #sponsors-hero h1 {
     font-size: 1.5rem;
   }
 
@@ -1089,7 +1096,8 @@
   #gallery-hero,
   #sponsor-hero,
   #alumni-hero,
-  #wof-hero {
+  #wof-hero,
+  #sponsors-hero {
     padding: calc(3rem + var(--header-height)) 10px 3rem;
   }
 }
@@ -1979,5 +1987,72 @@
   #wof-year select,
   #wof-year option {
     font-size: 0.9rem;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#all-sponsors
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #all-sponsors h2 {
+    font-size: 32px;
+  }
+
+  #all-sponsors .container {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #all-sponsors {
+    padding: 2rem 0;
+  }
+
+  #all-sponsors .container {
+    padding: 1rem;
+  }
+
+  #all-sponsors .sponsor-container {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #all-sponsors {
+    padding: 1rem 0;
+  }
+
+  #all-sponsors .container {
+    padding: 0;
+  }
+
+  #all-sponsors .sponsor-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #all-sponsors .sponsor-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #all-sponsors {
+    padding: 10px;
+  }
+
+  #all-sponsors .sponsor-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 336px) {
+  #all-sponsors .sponsor-container {
+    grid-template-columns: 1fr;
   }
 }
