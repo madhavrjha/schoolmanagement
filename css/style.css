@@ -2843,12 +2843,13 @@ footer a {
 }
 
 #alumni-people .alumni-box {
-  transition: all 0.5s;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 #alumni-people .alumni-box.card {
   box-shadow: 0 0 3px 4px rgba(0 0 0 / 2%);
+  transition: all 0.2s;
 }
 
 #alumni-people .alumni-box img {

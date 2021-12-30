@@ -1016,19 +1016,23 @@
  =========================================================================================================================
   Section#about-hero
   Section#gallery-hero
+  Section#sponsor-hero
+  Section#alumni-hero
  =========================================================================================================================
 */
 
 @media (max-width: 1400px) {
   #about-hero p,
   #gallery-hero p:nth-child(1),
-  #sponsor-hero p:nth-child(1) {
+  #sponsor-hero p:nth-child(1),
+  #alumni-hero p:nth-child(1) {
     font-size: 0.9rem;
   }
 
   #about-hero h1,
   #gallery-hero h1,
-  #sponsor-hero h1 {
+  #sponsor-hero h1,
+  #alumni-hero h1 {
     font-size: 2.5rem;
   }
 
@@ -1038,7 +1042,8 @@
   }
 
   #gallery-hero p:nth-child(3),
-  #sponsor-hero p:nth-child(3) {
+  #sponsor-hero p:nth-child(3),
+  #alumni-hero p:nth-child(3) {
     font-size: 0.9rem;
   }
 }
@@ -1046,13 +1051,15 @@
 @media (max-width: 992px) {
   #about-hero,
   #gallery-hero,
-  #sponsor-hero {
+  #sponsor-hero,
+  #alumni-hero {
     min-height: 300px;
     justify-content: center;
   }
 
   #gallery-hero p:nth-child(3),
-  #sponsor-hero p:nth-child(3) {
+  #sponsor-hero p:nth-child(3),
+  #alumni-hero p:nth-child(3) {
     max-width: 90%;
   }
 }
@@ -1060,7 +1067,8 @@
 @media (max-width: 768px) {
   #about-hero h1,
   #gallery-hero h1,
-  #sponsor-hero h1 {
+  #sponsor-hero h1,
+  #alumni-hero h1 {
     font-size: 1.5rem;
   }
 
@@ -1072,7 +1080,8 @@
 @media (max-width: 576px) {
   #about-hero,
   #gallery-hero,
-  #sponsor-hero {
+  #sponsor-hero,
+  #alumni-hero {
     padding: calc(3rem + var(--header-height)) 10px 3rem;
   }
 }
@@ -1903,6 +1912,32 @@
 
 /* 
  =========================================================================================================================
-  Section#sponsor-form
+  Section#alumni-people
  =========================================================================================================================
 */
+
+@media (max-width: 1400px) {
+  #alumni-people .container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #alumni-people .container {
+    padding: 0;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #alumni-people .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #alumni-people .container {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+}
