@@ -2056,3 +2056,47 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#all-notice
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #all-notice h2 {
+    font-size: 24px;
+  }
+
+  #all-notice .notice-box {
+    padding: 0 0 4rem;
+  }
+
+  #all-notice .container .box {
+    padding: 0.7rem 1.5rem;
+  }
+
+  #all-notice .box h2 {
+    font-size: 1.2rem;
+  }
+
+  #all-notice .box > p:nth-child(2) {
+    font-size: 0.9rem;
+  }
+
+  #all-notice .box > p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #all-notice .notice-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  #all-notice {
+    padding: 10px;
+  }
+}
