@@ -44,6 +44,10 @@
   font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* 
  =========================================================================================================================
   Button
