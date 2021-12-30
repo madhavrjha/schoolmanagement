@@ -43,7 +43,6 @@ const alumniToggleButtons = document.querySelectorAll('#alumni-people .alumni-bo
 alumniToggleButtons.forEach( toggleBtn => {
   toggleBtn.parentElement.addEventListener('click', () => {
     toggleBtn.classList.toggle('rotate-180');
-    console.log(toggleBtn.nextElementSibling);
     toggleBtn.nextElementSibling.classList.toggle('alumni-box-visible');
     toggleBtn.parentElement.classList.toggle('card');
   })
@@ -56,7 +55,6 @@ const wofToggleButtons = document.querySelectorAll('#wof-people .wof-card i');
 wofToggleButtons.forEach( toggleBtn => {
   toggleBtn.parentElement.addEventListener('click', () => {
     toggleBtn.classList.toggle('rotate-180');
-    console.log(toggleBtn.nextElementSibling);
     toggleBtn.nextElementSibling.classList.toggle('wof-card-visible');
     toggleBtn.parentElement.classList.toggle('card');
   })
