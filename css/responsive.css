@@ -1474,3 +1474,69 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#admission-hero
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #admission-hero {
+    min-height: 95vh;
+  }
+  #admission-hero p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+
+  #admission-hero h1 {
+    font-size: 40px;
+  }
+
+  #admission-hero p:nth-child(3) {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #admission-hero {
+    min-height: 400px;
+  }
+
+  #admission-hero::after {
+    display: none;
+  }
+
+  #admission-hero p:nth-child(1) {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #admission-hero h1,
+  #admission-hero p {
+    text-align: center;
+  }
+
+  #admission-hero h1 {
+    font-size: 32px;
+  }
+
+  #admission-hero p:nth-child(3) {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  #admission-hero {
+    padding: calc(3rem + var(--header-height)) 10px 3rem;
+  }
+
+  #admission-hero h1 {
+    font-size: 24px;
+  }
+
+  #admission-hero p:nth-child(3) {
+    max-width: 100%;
+  }
+}
