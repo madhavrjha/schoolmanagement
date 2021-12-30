@@ -1021,12 +1021,14 @@
 
 @media (max-width: 1400px) {
   #about-hero p,
-  #gallery-hero p:nth-child(1) {
+  #gallery-hero p:nth-child(1),
+  #sponsor-hero p:nth-child(1) {
     font-size: 0.9rem;
   }
 
   #about-hero h1,
-  #gallery-hero h1 {
+  #gallery-hero h1,
+  #sponsor-hero h1 {
     font-size: 2.5rem;
   }
 
@@ -1035,26 +1037,30 @@
     padding: 0.8rem 1.5rem;
   }
 
-  #gallery-hero p:nth-child(3) {
+  #gallery-hero p:nth-child(3),
+  #sponsor-hero p:nth-child(3) {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 992px) {
   #about-hero,
-  #gallery-hero {
+  #gallery-hero,
+  #sponsor-hero {
     min-height: 300px;
     justify-content: center;
   }
 
-  #gallery-hero p:nth-child(3) {
+  #gallery-hero p:nth-child(3),
+  #sponsor-hero p:nth-child(3) {
     max-width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   #about-hero h1,
-  #gallery-hero h1 {
+  #gallery-hero h1,
+  #sponsor-hero h1 {
     font-size: 1.5rem;
   }
 
@@ -1065,7 +1071,8 @@
 
 @media (max-width: 576px) {
   #about-hero,
-  #gallery-hero {
+  #gallery-hero,
+  #sponsor-hero {
     padding: calc(3rem + var(--header-height)) 10px 3rem;
   }
 }
@@ -1710,29 +1717,38 @@
 */
 
 @media (max-width: 1400px) {
+  #sponsor-form > i,
   #apply-form > i {
     font-size: 1.5rem;
   }
 
-  #apply-form > p {
+  #apply-form > p,
+  #sponsor-from > p {
     font-size: 1rem;
   }
 
-  #apply-form > h2 {
+  #apply-form > h2,
+  #sponsor-form > h2 {
     font-size: 32px;
   }
 
-  #apply-form .form-box {
+  #apply-form .form-box,
+  #sponsor-form .form-box {
     margin: 3rem 8rem;
   }
 
-  #apply-form .form-box h1 {
+  #apply-form .form-box h1,
+  #sponsor-form .form-box h1 {
     font-size: 32px;
   }
 
   #apply-form .form-box input[type="text"],
   #apply-form .form-box input[type="email"],
-  #apply-form .form-box select {
+  #apply-form .form-box select,
+  #sponsor-form .form-box input[type="text"],
+  #sponsor-form .form-box input[type="email"],
+  #sponsor-form .form-box select,
+  #sponsor-form .form-box textarea {
     font-size: 0.9rem;
   }
 
@@ -1740,14 +1756,20 @@
     font-size: 0.9rem;
   }
 
-  #apply-form .form-box > div:last-child .btn {
+  #apply-form .form-box > div:last-child .btn,
+  #sponsor-form .form-box > div:last-child .btn {
     padding: 0.5rem 1.2rem;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 1200px) {
-  #apply-form .form-box {
+  #sponsor-form {
+    padding: 3rem 0 3rem;
+  }
+
+  #apply-form .form-box,
+  #sponsor-form .form-box {
     margin: 3rem 5rem;
     padding: 2rem;
     gap: 2rem;
@@ -1755,24 +1777,36 @@
 }
 
 @media (max-width: 992px) {
-  #apply-form > h2 {
+  #apply-form > h2,
+  #sponsor-form > h2 {
     font-size: 24px;
   }
 
-  #apply-form .form-box {
+  #apply-form .form-box,
+  #sponsor-form .form-box {
     margin: 3rem;
   }
 
-  #apply-form .form-box h1 {
+  #apply-form .form-box h1,
+  #sponsor-form .form-box h1 {
     font-size: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  #apply-form .form-box {
+  #apply-form .form-box,
+  #sponsor-form .form-box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  #sponsor-form .form-box {
+    gap: 2rem;
+  }
+
+  #sponsor-form .form-box textarea {
+    height: 120px;
   }
 
   #apply-form .form-box > div {
@@ -1801,13 +1835,19 @@
 }
 
 @media (max-width: 576px) {
-  #apply-form {
+  #apply-form,
+  #sponsor-form {
     padding: 2rem 0;
   }
-  #apply-form .form-box {
+
+  #apply-form .form-box,
+  #sponsor-form .form-box {
     margin: 3rem 10px;
+    padding: 10px;
   }
-  #apply-form .form-box h1 {
+
+  #apply-form .form-box h1,
+  #sponsor-form .form-box h1 {
     font-size: 20px;
   }
 }
@@ -1860,3 +1900,9 @@
     padding: 0 0 2rem;
   }
 }
+
+/* 
+ =========================================================================================================================
+  Section#sponsor-form
+ =========================================================================================================================
+*/
