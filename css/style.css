@@ -537,16 +537,19 @@ aside nav li.active a {
 /* 
  =========================================================================================================================
   Section#notice
+  Section#news
  =========================================================================================================================
 */
 
-#notice {
+#notice,
+#news {
   padding: 4rem 0;
   background: url("../images/shapes-bg.png") no-repeat center top/cover;
   position: relative;
 }
 
-#notice::after {
+#notice::after,
+#news::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -558,12 +561,14 @@ aside nav li.active a {
     inset 0 -20rem 20rem var(--theme-statement-box-shadow-color);
 }
 
-#notice * {
+#notice *,
+#news * {
   position: relative;
   z-index: 2;
 }
 
-#notice > i {
+#notice > i,
+#news > i {
   display: block;
   text-align: center;
   color: var(--theme-primary-color);
@@ -571,7 +576,8 @@ aside nav li.active a {
   margin: 1rem;
 }
 
-#notice > p {
+#notice > p,
+#news > p {
   font-family: "Cabin Sketch", display;
   font-weight: 700;
   text-transform: uppercase;
@@ -584,7 +590,8 @@ aside nav li.active a {
   padding-bottom: 5px;
 }
 
-#notice > h2 {
+#notice > h2,
+#news > h2 {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -641,12 +648,118 @@ aside nav li.active a {
   font-size: 1.1rem;
   border-radius: 10px;
   padding: 0.7rem 1.4rem;
+  transition: all 0.6s;
+}
+
+#notice .container .btn i {
+  margin-left: 5px;
 }
 
 #notice .container .btn:hover {
   color: #fff;
   background: var(--theme-primary-color);
 }
+
+/* 
+ =========================================================================================================================
+  Section#news
+ =========================================================================================================================
+*/
+
+#news .container {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+#news .card {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0 0 0 / 12%);
+}
+
+#news span {
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  color: var(--theme-primary-color);
+}
+
+#news .primary-news .card-img-top {
+  height: 250px;
+}
+
+#news .primary-news .card {
+  height: auto;
+}
+
+#news .primary-news .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#news .primary-news .card-body a {
+  margin-top: auto;
+}
+
+#news .secondary-news .card {
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+
+#news .secondary-news .card:last-child {
+  margin-bottom: 0;
+}
+
+#news .secondary-news .card-img-top {
+  flex: 1;
+}
+
+#news .secondary-news .card-body {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#news .btn {
+  background: transparent;
+  font-weight: normal;
+  color: var(--theme-primary-color);
+  margin-left: auto;
+  align-self: end;
+}
+
+#news .btn:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+#news .btn i {
+  margin-left: 5px;
+}
+
+#news .container.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#news .container.bottom a {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: all 0.6s;
+  border-radius: 10px;
+  padding: 0.7rem 1.6rem;
+}
+
+#news .container.bottom a:hover {
+  color: #fff;
+  background: var(--theme-primary-color);
+  text-decoration: none;
+}
+
 
 /* 
  =========================================================================================================================
@@ -863,6 +976,7 @@ aside nav li.active a {
   font-family: "Cabin Sketch", display;
   font-weight: 500;
   font-size: 54px;
+  color: #fff;
 }
 
 #get-in-touch .container article:nth-child(1) div p {
