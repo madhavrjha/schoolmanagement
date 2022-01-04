@@ -12,7 +12,8 @@
   <!-- Font Awesome Icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
+  <!-- Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="./css/utility.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -60,41 +61,42 @@
   </aside>
 
   <section id="contact-hero">
-    <p>Contact us</p>
-    <h1>Talk with an Admin</h1>
+    <p data-aos="fade-up">Contact us</p>
+    <h1 data-aos="fade-up">Talk with an Admin</h1>
   </section>
 
   <section id="contact-area">
     <div class="container">
 
       <div class="boxes">
-        <div>
+        <div data-aos="fade-up">
           <h2>Location</h2>
           <p>2345 Divi Rd. #100 </p>
           <p>San Francisco, CA 93522</p>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <h2>School Hours</h2>
           <p>M-F: 8am - 4pm</p>
           <p>Weekends: Closed</p>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <h2>Phone & Email</h2>
           <p>351-352-9615</p>
           <p>hello@divi.edu</p>
         </div>
       </div>
 
-      <div class="form">
-        <p>Email</p>
-        <h1>Send a Message</h1>
+      <div class="form" data-aos="fade-up">
+        <p data-aos="fade-up">Email</p>
+        <h1 data-aos="fade-up">Send a Message</h1>
         <form>
           <div>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Name" data-aos="fade-up-right">
+            <input type="email" placeholder="Email Address" data-aos="fade-up-left">
           </div>
-          <textarea placeholder="Message"></textarea>
-          <button type="submit" class="btn">Submit <i class="fa-regular fa-circle-right"></i></button>
+          <textarea placeholder="Message" data-aos="fade-up"></textarea>
+          <button type="submit" class="btn" data-aos="fade-up-left">Submit <i
+              class="fa-regular fa-circle-right"></i></button>
         </form>
       </div>
     </div>
@@ -106,7 +108,7 @@
 
   <section id="map">
     <div class="container">
-      <iframe
+      <iframe data-aos="fade-up"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.250591265805!2d27.857061314688647!3d-26.285975173685895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a65ea115c3a1%3A0xe1aee2c6f955ff99!2sMveledzandivho%20Primary%20School!5e0!3m2!1sen!2sin!4v1636357957397!5m2!1sen!2sin"
         allowfullscreen="" loading="lazy"></iframe>
     </div>
@@ -123,6 +125,18 @@
       </ul>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      once: false,
+      mirror: false,
+      easing: 'ease-in-out',
+    });
+  </script>
 
   <script src="./js/main.js"></script>
 
