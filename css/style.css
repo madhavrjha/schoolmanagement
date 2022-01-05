@@ -36,47 +36,122 @@ header img {
   transition: all var(--header-transition-time);
 }
 
-header ul {
+header .container > ul {
   height: var(--brand-icon-height);
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-left: auto;
-  margin-right: 5rem;
+  /* margin-left: auto; */
+  /* margin-right: 5rem; */
   list-style: none;
 }
 
-header li {
+header .container > ul > li {
   display: inline-block;
   margin: 0 1rem;
   position: relative;
 }
 
-header li.active::after {
+header .container > ul > li.active::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 12px;
   left: 0;
   width: 100%;
   height: 4px;
   background-color: var(--theme-primary-color);
 }
 
+header .container > ul > li {
+  position: relative;
+}
+
+header .container > ul > li > a {
+  height: var(--header-height);
+  line-height: var(--header-height);
+  display: inline-block;
+}
+
+header ul li ul {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0 0 0 / 12%);
+  padding: 0;
+  opacity: 0.97;
+  border-top: 2px solid var(--theme-primary-color);
+  top: calc(var(--header-height));
+  display: none;
+  min-width: 130px;
+  width: max-content;
+}
+
+header ul li ul li {
+  list-style: none;
+  padding: 10px 1rem;
+}
+
+header ul li ul li:hover {
+  background: rgba(0 0 0 / 1%);
+}
+
+header ul li ul li a {
+  display: block;
+  width: 100%;
+}
+
+header ul li:hover ul {
+  display: block !important;
+}
+
 header a {
   text-decoration: none;
   color: #111;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 header a:hover {
   color: var(--theme-primary-color);
 }
 
+header a i {
+  display: inline-block;
+  /* border: 1px solid red; */
+  height: 10px;
+  line-height: 1;
+  position: relative;
+  top: -4px;
+  padding-left: 3px;
+  /* line-height: 100%; */
+  transition: all 0.2s;
+}
+
 header .btn {
   padding: 0.3rem 1.1rem;
   border-radius: 2rem;
   transition: all var(--header-transition-time);
+}
+
+header .sponsor-btn {
+  height: 30px !important;
+  line-height: 28px !important;
+  padding: 0 15px;
+  border-radius: 20px;
+  border: 2px solid var(--theme-primary-color);
+  color: var(--theme-primary-color);
+  transition: all 0.6s;
+}
+
+header .user-icon * {
+  /* border: 1px solid red; */
+  color: var(--theme-primary-color);
+  position: relative;
+  top: 1px;
+}
+
+header .sponsor-btn:hover {
+  background: var(--theme-primary-color);
+  color: #fff;
 }
 
 header .container > i {
@@ -759,7 +834,6 @@ aside nav li.active a {
   background: var(--theme-primary-color);
   text-decoration: none;
 }
-
 
 /* 
  =========================================================================================================================
