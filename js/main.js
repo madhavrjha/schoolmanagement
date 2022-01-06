@@ -1,4 +1,5 @@
-// Click on Bars and Times
+// Header JavaScript
+// JavaScript for Expand and Collapse the Sidebar
 
 const headerBars = document.querySelector('header .container > i.fas.fa-bars');
 const headerTimes = document.querySelector('aside .close-btn');
@@ -10,10 +11,35 @@ headerBars.addEventListener('click', () => {
 
 headerTimes.addEventListener('click', () => {
   aside.classList.remove('active');
-})
+});
 
 
-// Alumni Description Hide / Show Effect
+// Aside SubMenu JQuery
+// Jquery for Toggle Sub Menus
+
+
+$(document).ready(function () {
+  $('.sub-btn').click(function () {
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate-90');
+  });
+});
+
+
+
+
+// Animate On Scroll Initialization
+
+AOS.init({
+  offset: 200,
+  duration: 600,
+  once: false,
+  mirror: false,
+  easing: 'ease-in-out',
+});
+
+// Alumni JavaScript
+// javaScript to Expand and Collapse the Description
 
 const alumniToggleButtons = document.querySelectorAll('#alumni-people .alumni-box i');
 
@@ -25,7 +51,8 @@ alumniToggleButtons.forEach( toggleBtn => {
   })
 })
 
-// Wall Of Fame Description Hide / Show Effect
+// Wall of Fame JavaScript
+// javaScript to Expand and Collapse the Description
 
 const wofToggleButtons = document.querySelectorAll('#wof-people .wof-card i');
 

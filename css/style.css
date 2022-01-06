@@ -246,7 +246,8 @@ aside .menu .item a {
 }
 
 aside .menu .item a:hover {
-  background: #f6f6f6;
+  background: var(--theme-primary-color);
+  color: #fff;
   transition: 0.3s ease;
 }
 
@@ -262,12 +263,12 @@ aside .menu .item a .dropdown {
 }
 
 aside .menu .item .sub-menu {
-  background: #f9f9f9;
+  background: #f6f6f6;
   display: none;
 }
 
 aside .menu .item .sub-menu a {
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 /* 
