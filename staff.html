@@ -28,38 +28,91 @@
 
   <header>
     <div class="container">
+      <i class="fas fa-bars"></i>
       <img src="./images/brand.png" alt="brand-icon">
       <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
         <li><a href="./admission.html">Apply</a></li>
-        <li class="active"><a href="./staff.html">Staff</a></li>
+        <li>
+          <a href="#">School Life <i class="fa-solid fa-sort-down"></i></a>
+          <ul>
+            <li><a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">General <i class="fa-solid fa-sort-down"></i></a>
+          <ul>
+            <li><a href="./notice.html">Notice Board</a></li>
+            <li><a href="./library.html">Study Materials</a></li>
+            <li><a href="./wall-of-fame.html">School Wall of Fame</a></li>
+            <li><a href="./blog.html">School News</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#">About <i class="fa-solid fa-sort-down"></i></a>
+          <ul>
+            <li><a href="./about.html">Our School</a></li>
+            <li><a href="./staff.html">Our Staff</a></li>
+            <li><a href="./alumni.html">Our Alumni</a></li>
+            <li><a href="./all-sponsors.html">Our Sponsors</a></li>
+          </ul>
+        </li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <a href="./login.html" class="btn">Log In</a>
-      <i class="fas fa-bars"></i>
+      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+      <a href="./login.html" class="btn login-btn">Log In</a>
     </div>
   </header>
 
   <!-- Side Navigation -->
 
   <aside>
-    <div class="container">
-      <img src="./images/brand.png" alt="brand-icon">
-      <a href="./login.html" class="btn">Log In</a>
+
+    <div class="close-btn">
       <i class="fas fa-times"></i>
     </div>
-    <nav>
-      <ul class="container">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./admission.html">Apply</a></li>
-        <li class="active"><a href="./staff.html">Staff</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
 
+    <div class="header">
+      <img src="./images/brand.png" alt="brand-icon">
+    </div>
+
+    <div class="buttons">
+      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+      <a href="./login.html" class="btn">Login</a>
+    </div>
+
+
+    <div class="menu">
+      <div class="item"><a href="./index.html"><i class="fas fa-home"> </i>Home</a></div>
+      <div class="item"><a href="./admission.html"><i class="fas fa-file"> </i>Apply</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-child"> </i>School Life <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="./gallery.html" class="sub-item">Gallery</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"> </i>General <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="./notice.html" class="sub-item">Notice Board</a>
+          <a href="./library.html" class="sub-item">Study Material</a>
+          <a href="./wall-of-fame.html" class="sub-item">School Wall of Fame</a>
+          <a href="./blog.html" class="sub-item">School News</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-info-circle"></i>About <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="./about.html" class="sub-item">Our School</a>
+          <a href="./staff.html" class="sub-item">Our Staff</a>
+          <a href="./alumni.html" class="sub-item">Our Alumni</a>
+          <a href="./all-sponsors.html" class="sub-item">Our Sponsors</a>
+        </div>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-address-book"></i>Contact</a></div>
+    </div>
+
+  </aside>
 
   <section id="staff-hero">
     <div class="container">

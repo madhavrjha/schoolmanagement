@@ -58,23 +58,22 @@ section {
   Scroll Bar
  =========================================================================================================================
 */
-
-/* ::-webkit-scrollbar {
-  width: 10px;
+/* 
+::-webkit-scrollbar {
+  width: auto;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--theme-primary-color);
-  border-radius: 10px;
-  cursor: pointer;
+  background: rgba(0 0 0 / 25%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--theme-primary-light-1);
+  background: rgba(0 0 0 / 50%);
 } */
 
 /* 
