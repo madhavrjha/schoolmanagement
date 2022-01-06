@@ -40,6 +40,15 @@
 }
 
 @media (max-width: 992px) {
+  header .container {
+    justify-content: flex-start;
+  }
+
+  header img {
+    position: relative;
+    margin: 0 20px;
+  }
+
   header .container > ul,
   header .container > a {
     display: none;

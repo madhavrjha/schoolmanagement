@@ -29,6 +29,7 @@
 
   <header>
     <div class="container">
+      <i class="fas fa-bars"></i>
       <img src="./images/brand.png" alt="brand-icon">
       <ul>
         <li class="active"><a href="./index.html">Home</a></li>
@@ -59,49 +60,58 @@
         </li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
-      <a href="./login.html" class="btn">Log In</a>
-      <!-- <a href="./login.html" class="user-icon"><i class="fa-regular fa-2x fa-circle-user"></i></a> -->
-      <i class="fas fa-bars"></i>
+      <a href="./login.html" class="btn login-btn">Log In</a>
     </div>
   </header>
 
   <!-- Side Navigation -->
 
   <aside>
-    <div class="container">
-      <img src="./images/brand.png" alt="brand-icon">
-      <a href="./login.html" class="btn">Log In</a>
+
+    <div class="close-btn">
       <i class="fas fa-times"></i>
     </div>
-    <nav>
-      <ul class="container">
-        <li class="active"><a href="./index.html">Home</a></li>
-        <li><a href="./admission.html">Apply</a></li>
-        <li><a href="#">School Life</a>
-          <ul>
-            <li><a href="./gallery.html">Gallery</a></li>
-          </ul>
-        </li>
-        <li><a href="#">General</a>
-          <ul>
-            <li><a href="./notice.html">Notice Board</a></li>
-            <li><a href="./library.html">Study Materials</a></li>
-            <li><a href="./wall-of-fame.html">School Wall of Fame</a></li>
-            <li><a href="./news.html">School News</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About</a>
-          <ul>
-            <li><a href="./about.html">Our School</a></li>
-            <li><a href="./staff.html">Our Staff</a></li>
-            <li><a href="./alumni.html">Our Alumni</a></li>
-            <li><a href="./sponsor.html">Our Sponsors</a></li>
-          </ul>
-        </li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+    <div class="header">
+      <img src="./images/brand.png" alt="brand-icon">
+    </div>
+
+    <div class="buttons">
+      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+      <a href="./login.html" class="btn">Login</a>
+    </div>
+
+
+    <div class="menu">
+      <div class="item"><a href="#"><i class="fas fa-desktop"> </i>Home</a></div>
+      <div class="item"><a href="#"><i class="fas fa-desktop"> </i>Apply</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-table"> </i>School Life <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Gallery</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"> </i>General <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Notice Board</a>
+          <a href="#" class="sub-item">Study Material</a>
+          <a href="#" class="sub-item">School Wall of Fame</a>
+          <a href="#" class="sub-item">School News</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"> </i>About <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Our School</a>
+          <a href="#" class="sub-item">Our Staff</a>
+          <a href="#" class="sub-item">Our Alumni</a>
+          <a href="#" class="sub-item">Our Sponsors</a>
+        </div>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-info-circle"> </i>Contact</a></div>
+    </div>
+
   </aside>
 
   <!-- Admission: Call-to-Action -->
@@ -423,6 +433,25 @@
       easing: 'ease-in-out',
     });
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+
+      // jQuery for Toggle and Sub Menus
+
+      $('.sub-btn').click(function () {
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate-90');
+      });
+
+
+      // jQuery for Expand and Collapse the Sidebar [aside]
+    });
+  </script>
+
 
   <script src="./js/main.js"></script>
 
