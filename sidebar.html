@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/sidebar.css">
+
+  <title>SideBar</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="side-bar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu">
+      <div class="item"><a href="#"><i class="fas fa-desktop"> </i>Dashboard</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-table"> </i>Table <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Sub Item 01</a>
+          <a href="#" class="sub-item">Sub Item 02</a>
+          <a href="#" class="sub-item">Sub Item 03</a>
+        </div>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-th"> </i>Forms</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"> </i>Settings <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Sub Item 01</a>
+          <a href="#" class="sub-item">Sub Item 02</a>
+          <a href="#" class="sub-item">Sub Item 03</a>
+          <a href="#" class="sub-item">Sub Item 04</a>
+          <a href="#" class="sub-item">Sub Item 05</a>
+        </div>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-info-circle"> </i>About</a></div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+
+      // jQuery for Toggle and Sub Menus
+
+      $('.sub-btn').click(function () {
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+
+
+      // jQuery for Expand and Collapse the Sidebar [aside]
+
+      $('.menu-btn').click(function () {
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css('visibility', 'hidden');
+      });
+
+      $('.close-btn').click(function () {
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css('visibility', 'visible');
+
+      });
+    });
+  </script>
+
+</body>
+
+</html>
