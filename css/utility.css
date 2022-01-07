@@ -60,7 +60,7 @@ section {
 */
 
 ::-webkit-scrollbar {
-  width: auto;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -68,11 +68,11 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0 0 0 / 25%);
+  background: rgba(0 0 0 / 30%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0 0 0 / 50%);
+  background: rgba(0 0 0 / 40%);
 }
 
 /* 
