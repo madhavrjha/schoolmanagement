@@ -33,33 +33,8 @@ $(document).ready(function () {
 AOS.init({
   offset: 200,
   duration: 600,
-  once: false,
-  mirror: false,
+  once: true,
+  mirror: true,
   easing: 'ease-in-out',
 });
 
-// Alumni JavaScript
-// javaScript to Expand and Collapse the Description
-
-const alumniToggleButtons = document.querySelectorAll('#alumni-people .alumni-box i');
-
-alumniToggleButtons.forEach( toggleBtn => {
-  toggleBtn.parentElement.addEventListener('click', () => {
-    toggleBtn.classList.toggle('rotate-180');
-    toggleBtn.nextElementSibling.classList.toggle('alumni-box-visible');
-    toggleBtn.parentElement.classList.toggle('card');
-  })
-})
-
-// Wall of Fame JavaScript
-// javaScript to Expand and Collapse the Description
-
-const wofToggleButtons = document.querySelectorAll('#wof-people .wof-card i');
-
-wofToggleButtons.forEach( toggleBtn => {
-  toggleBtn.parentElement.addEventListener('click', () => {
-    toggleBtn.classList.toggle('rotate-180');
-    toggleBtn.nextElementSibling.classList.toggle('wof-card-visible');
-    toggleBtn.parentElement.classList.toggle('card');
-  })
-})

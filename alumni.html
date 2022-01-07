@@ -109,7 +109,7 @@
           <a href="./all-sponsors.html" class="sub-item">Our Sponsors</a>
         </div>
       </div>
-      <div class="item"><a href="#"><i class="fas fa-address-book"></i>Contact</a></div>
+      <div class="item"><a href="./contact.html"><i class="fas fa-address-book"></i>Contact</a></div>
     </div>
 
   </aside>
@@ -292,6 +292,22 @@
 
   <!-- Custom Script -->
   <script src="./js/main.js"></script>
+
+  <script>
+
+    // Alumni JavaScript
+    // javaScript to Expand and Collapse the Description
+
+    const alumniToggleButtons = document.querySelectorAll('#alumni-people .alumni-box i');
+
+    alumniToggleButtons.forEach(toggleBtn => {
+      toggleBtn.parentElement.addEventListener('click', () => {
+        toggleBtn.classList.toggle('rotate-180');
+        toggleBtn.nextElementSibling.classList.toggle('alumni-box-visible');
+        toggleBtn.parentElement.classList.toggle('card');
+      });
+    });
+  </script>
 
 </body>
 
