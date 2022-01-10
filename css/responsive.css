@@ -1097,6 +1097,7 @@
   Section#wof-hero
   Section#sponsors-hero
   Section#news-hero
+  Section#news-read-hero
  =========================================================================================================================
 */
 
@@ -1107,7 +1108,8 @@
   #alumni-hero p:nth-child(1),
   #wof-hero p:nth-child(1),
   #sponsors-hero p:nth-child(1),
-  #news-hero p {
+  #news-hero p,
+  #news-read-hero p {
     font-size: 0.9rem;
   }
 
@@ -1117,7 +1119,8 @@
   #alumni-hero h1,
   #wof-hero h1,
   #sponsors-hero h1,
-  #news-hero h1 {
+  #news-hero h1,
+  #news-read-hero h1 {
     font-size: 2.5rem;
   }
 
@@ -1142,12 +1145,14 @@
   #alumni-hero,
   #wof-hero,
   #sponsors-hero,
-  #news-hero {
+  #news-hero,
+  #news-read-hero {
     min-height: 300px;
     justify-content: center;
   }
 
-  #news-hero p {
+  #news-hero p,
+  #news-read-hero p {
     margin-top: 0;
   }
 
@@ -1165,13 +1170,19 @@
     box-shadow: inset 0 -5rem 15rem rgba(255 255 255 / 100%);
   }
 
+  #news-read-hero::after {
+    box-shadow: inset 0 -10rem 15rem rgba(255 255 255 / 100%),
+      inset 0 5rem 10rem rgba(255 255 255 / 100%);
+  }
+
   #about-hero h1,
   #gallery-hero h1,
   #sponsor-hero h1,
   #alumni-hero h1,
   #wof-hero h1,
   #sponsors-hero h1,
-  #news-hero h1 {
+  #news-hero h1,
+  #news-read-hero h1 {
     font-size: 1.5rem;
   }
 
@@ -1181,13 +1192,18 @@
 }
 
 @media (max-width: 576px) {
+  #news-read-hero {
+    min-height: 200px;
+  }
+
   #about-hero,
   #gallery-hero,
   #sponsor-hero,
   #alumni-hero,
   #wof-hero,
   #sponsors-hero,
-  #news-hero {
+  #news-hero,
+  #news-read-hero {
     padding: calc(3rem + var(--header-height)) 10px 3rem;
   }
 }
@@ -2245,5 +2261,41 @@
     width: 100%;
     margin-bottom: 1rem;
     margin-right: 0;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#news-detail
+ =========================================================================================================================
+*/
+
+@media (max-width: 1400px) {
+  #news-detail .container {
+    grid-template-columns: 13fr 7fr;
+  }
+
+  #news-detail .left h2 {
+    font-size: 1.6rem;
+  }
+
+  #news-detail .right h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #news-detail .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  #news-detail .left h2 {
+    font-size: 1.3rem;
+  }
+
+  #news-detail .right h2 {
+    font-size: 1.3rem;
   }
 }
