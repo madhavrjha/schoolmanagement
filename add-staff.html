@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BootStrap 5 Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <title>Mveledzandivho Primary - Add Staff</title>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+
+  <header>
+    <div class="container">
+      <i class="fas fa-bars"></i>
+      <img src="./images/brand.png" alt="brand-icon">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./admission.html">Apply</a></li>
+        <li>
+          <a href="#">School Life <i class="fa-solid fa-sort-down"></i></a>
+          <ul>
+            <li><a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#">General <i class="fa-solid fa-sort-down"></i></a>
+          <ul>
+            <li class="active"><a href="./add-staff.html">Add Staff</a></li>
+            <li><a href="./notice.html">Notice Board</a></li>
+            <li><a href="./library.html">Study Materials</a></li>
+            <li><a href="./wall-of-fame.html">School Wall of Fame</a></li>
+            <li><a href="./blog.html">School News</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About <i class="fa-solid fa-sort-down"></i></a>
+          <ul>
+            <li><a href="./about.html">Our School</a></li>
+            <li><a href="./staff.html">Our Staff</a></li>
+            <li><a href="./alumni.html">Our Alumni</a></li>
+            <li><a href="./all-sponsors.html">Our Sponsors</a></li>
+          </ul>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+      <a href="./login.html" class="btn login-btn">Log In</a>
+    </div>
+  </header>
+
+  <!-- Side Navigation -->
+
+  <aside>
+
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <div class="header">
+      <img src="./images/brand.png" alt="brand-icon">
+    </div>
+
+    <div class="buttons">
+      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+      <a href="./login.html" class="btn">Login</a>
+    </div>
+
+
+    <div class="menu">
+      <div class="item"><a href="./index.html"><i class="fas fa-home"> </i>Home</a></div>
+      <div class="item"><a href="./admission.html"><i class="fas fa-file"> </i>Apply</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-child"> </i>School Life <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="./gallery.html" class="sub-item">Gallery</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"> </i>General <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="./notice.html" class="sub-item">Notice Board</a>
+          <a href="./library.html" class="sub-item">Study Material</a>
+          <a href="./wall-of-fame.html" class="sub-item">School Wall of Fame</a>
+          <a href="./blog.html" class="sub-item">School News</a>
+        </div>
+      </div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-info-circle"></i>About <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="./about.html" class="sub-item">Our School</a>
+          <a href="./staff.html" class="sub-item">Our Staff</a>
+          <a href="./alumni.html" class="sub-item">Our Alumni</a>
+          <a href="./all-sponsors.html" class="sub-item">Our Sponsors</a>
+        </div>
+      </div>
+      <div class="item"><a href="./contact.html"><i class="fas fa-address-book"></i>Contact</a></div>
+    </div>
+
+  </aside>
+
+  <section id="add-staff-form">
+    <div class="container">
+      <form action="#">
+        <h2>Add Staff</h2>
+
+        <article class="basics">
+          <div>
+            <h3>Basics</h3>
+            <p>some information like the designation of the staff and the contract relation between staff and the
+              organization. both are mandatory to fill.</p>
+          </div>
+          <div>
+            <label for="designation">Designation*</label>
+            <select name="" id="designation">
+              <option value="">Choose..</option>
+              <option value="">Deputy Principal</option>
+              <option value="">Educator</option>
+              <option value="">HOD</option>
+              <option value="">IT Admin</option>
+              <option value="">Principal</option>
+              <option value="">SMT</option>
+            </select>
+
+            <label for="contract-type">Contract Type*</label>
+            <select name="" id="">
+              <option value="">Choose..</option>
+              <option value="">Permanent</option>
+              <option value="">Contract</option>
+            </select>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div>
+            <h3>Profile</h3>
+            <p>there is some personal details of yours like first name and last name of staff. email should be valid,
+              phone number must be without country code and starts with zero(0), and gender and dob of staff</p>
+          </div>
+          <div>
+
+            <label for="">First Name*</label>
+            <input type="text" name="" id="">
+
+            <label for="">Last Name*</label>
+            <input type="text" name="" id="">
+
+            <label for="">Email</label>
+            <input type="email" name="" id="">
+
+            <label for="">Mobile*</label>
+            <input type="number" name="" id="">
+
+            <label for="">Gender*</label>
+            <select name="" id="">
+              <option value="">Choose..</option>
+              <option value="">Male</option>
+              <option value="">Female</option>
+              <option value="">Others</option>
+            </select>
+
+            <label for="">Date of Birth*</label>
+            <input type="date" name="" id="">
+
+          </div>
+        </article>
+
+        <article class="other">
+          <div>
+            <h3>Other</h3>
+            <p>there would be your address and nation identification number (NID). we require to your NID to identify
+              the staff as a national person and it would be safe in our database.</p>
+          </div>
+          <div>
+            <label for="">National Identity Number*</label>
+            <input type="number" name="" id="">
+
+            <label for="">Suburb*</label>
+            <input type="text" name="" id="">
+
+            <label for="">Province*</label>
+            <select name="" id="">
+              <option value="">Choose...</option>
+              <option value="1">Eastern Cape</option>
+              <option value="2">Free State</option>
+              <option value="3">Gauteng</option>
+              <option value="4">KwaZulu-Natal</option>
+              <option value="5">Limpopo</option>
+              <option value="6">Mpumalanga</option>
+              <option value="7">Northern Cape</option>
+              <option value="8">North West</option>
+              <option value="9">Western Cape</option>
+            </select>
+
+            <label for="">Address*</label>
+            <textarea name="" id=""></textarea>
+          </div>
+        </article>
+
+        <div>
+          <button type="reset">Cancel</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <section id="get-in-touch">
+    <div class="container">
+      <article>
+        <div data-aos="fade-up-right">
+          <h2>450</h2>
+          <p>Students</p>
+        </div>
+        <div data-aos="fade-up-right">
+          <h2>30</h2>
+          <p>Faculty</p>
+        </div>
+        <div data-aos="fade-up-right">
+          <h2>24</h2>
+          <p>After School Programs</p>
+        </div>
+        <div data-aos="fade-up-right">
+          <h2>51</h2>
+          <p>Years Established</p>
+        </div>
+      </article>
+
+      <article data-aos="fade-up-left">
+        <h2>Get In Touch</h2>
+
+        <p>Location: 1243 Divi St., San Francisco, CA 92421</p>
+
+        <p>Telephone: (435) 123-3566</p>
+
+        <p>Email: hello@divi.edu</p>
+
+        <p>School Hours: M-F: 8am - 3pm</p>
+
+        <a href="./contact.html" class="btn">Contact Us</a>
+      </article>
+    </div>
+
+    <div class="policy" data-aos="fade-up">
+      <p>Non-Discrimination Policy</p>
+      <p>By accessing, using and/or interacting with Mveledzandivho Primary via its online and/or electronic platforms
+        such as
+        its website and application, you consent to the processing of your personal information by Mveledzandivho
+        Primary.
+        The Processing of personal information will be done in accordance with its POPI Policy. Should you not
+        consent, you must cease your interaction with Mveledzandivho Primary on any and every platform.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2021, Mveledzandivho Primary School. All right reserved.</p>
+      <ul>
+        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- jQuery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Bootstrap  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
