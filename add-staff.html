@@ -123,12 +123,12 @@
         <article class="basics">
           <div>
             <h3>Basics</h3>
-            <p>some information like the designation of the staff and the contract relation between staff and the
+            <p>Some information like the designation of the staff and the contract relation between staff and the
               organization. both are mandatory to fill.</p>
           </div>
           <div>
             <label for="designation">Designation*</label>
-            <select name="" id="designation">
+            <select name="" id="designation" required>
               <option value="">Choose..</option>
               <option value="">Deputy Principal</option>
               <option value="">Educator</option>
@@ -139,7 +139,7 @@
             </select>
 
             <label for="contract-type">Contract Type*</label>
-            <select name="" id="">
+            <select name="" id="" required>
               <option value="">Choose..</option>
               <option value="">Permanent</option>
               <option value="">Contract</option>
@@ -150,25 +150,28 @@
         <article class="profile">
           <div>
             <h3>Profile</h3>
-            <p>there is some personal details of yours like first name and last name of staff. email should be valid,
+            <p>There is some personal details of yours like first name and last name of staff. email should be valid,
               phone number must be without country code and starts with zero(0), and gender and dob of staff</p>
           </div>
           <div>
 
             <label for="">First Name*</label>
+            <input type="text" name="" id="" required>
+
+            <label for="">Middle Name</label>
             <input type="text" name="" id="">
 
             <label for="">Last Name*</label>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="" required>
 
             <label for="">Email</label>
             <input type="email" name="" id="">
 
             <label for="">Mobile*</label>
-            <input type="number" name="" id="">
+            <input type="number" name="" id="" required>
 
             <label for="">Gender*</label>
-            <select name="" id="">
+            <select name="" id="" required>
               <option value="">Choose..</option>
               <option value="">Male</option>
               <option value="">Female</option>
@@ -176,7 +179,7 @@
             </select>
 
             <label for="">Date of Birth*</label>
-            <input type="date" name="" id="">
+            <input type="date" name="" id="" required>
 
           </div>
         </article>
@@ -184,18 +187,18 @@
         <article class="other">
           <div>
             <h3>Other</h3>
-            <p>there would be your address and nation identification number (NID). we require to your NID to identify
+            <p>There would be your nation identification number (NID). we require your NID to identify
               the staff as a national person and it would be safe in our database.</p>
           </div>
           <div>
-            <label for="">National Identity Number*</label>
-            <input type="number" name="" id="">
+            <label for="">National Identity Number</label>
+            <input type="number" name="" id="" required>
 
             <label for="">Suburb*</label>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="" required>
 
             <label for="">Province*</label>
-            <select name="" id="">
+            <select name="" id="" required>
               <option value="">Choose...</option>
               <option value="1">Eastern Cape</option>
               <option value="2">Free State</option>
@@ -209,7 +212,10 @@
             </select>
 
             <label for="">Address*</label>
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="" required></textarea>
+
+            <label for="">Professional Photo*</label>
+            <input type="file" name="" id="" required>
           </div>
         </article>
 
