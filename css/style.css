@@ -305,6 +305,8 @@ aside .menu .item .sub-menu a {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-top: calc(3rem + var(--header-height));
+  padding-bottom: 3rem;
   background: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
@@ -354,10 +356,6 @@ aside .menu .item .sub-menu a {
   font-weight: 400;
 }
 
-/* #call-to-action * {
-  border: 1px solid red;
-} */
-
 #call-to-action .container > div {
   width: 100%;
   display: flex;
@@ -365,7 +363,14 @@ aside .menu .item .sub-menu a {
 }
 
 #call-to-action .btn {
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#call-to-action .btn:hover {
+  transform: scale(0.95);
+  opacity: 0.9;
 }
 
 /* 
@@ -3701,15 +3706,16 @@ footer a {
 /* 
  =========================================================================================================================
   Section#add-staff-form
+  Section#add-student-form
  =========================================================================================================================
 */
 
-#add-staff-form {
+:is(#add-student-form, #add-staff-form) {
   padding: calc(3rem + var(--header-height)) 0 3rem;
   background: url("../images/shapes-bg.png") repeat center center/contain;
 }
 
-#add-staff-form form {
+:is(#add-student-form, #add-staff-form) form {
   background: #f5f4fa;
   color: #29292b;
   padding: 2rem 1rem;
@@ -3719,7 +3725,7 @@ footer a {
   border-radius: 10px;
 }
 
-#add-staff-form form h2 {
+:is(#add-student-form, #add-staff-form) form h2 {
   color: #2c2c2e;
   font-weight: 700;
   font-family: sans-serif;
@@ -3728,7 +3734,7 @@ footer a {
   padding-bottom: 1rem;
 }
 
-#add-staff-form article {
+:is(#add-student-form, #add-staff-form) article {
   border-top: 2px solid #ccc;
   padding: 2rem;
   display: grid;
@@ -3736,40 +3742,46 @@ footer a {
   gap: 2rem;
 }
 
-#add-staff-form article div:nth-child(1) h3 {
+:is(#add-student-form, #add-staff-form) article div:nth-child(1) h3 {
   font-size: 1.2rem;
   color: #333;
 }
 
-#add-staff-form article div:nth-child(1) p {
+:is(#add-student-form, #add-staff-form) article div:nth-child(1) p {
   font-size: 1rem;
   color: #666;
   width: 90%;
 }
 
-#add-staff-form form :is(label, input, textarea, select, option) {
+:is(#add-student-form, #add-staff-form)
+  form
+  :is(label, input, textarea, select, option) {
   box-sizing: border-box;
   display: block;
   font-size: 0.9rem;
   width: 90%;
 }
 
-#add-staff-form form :is(input, textarea, select, option) {
+:is(#add-student-form, #add-staff-form)
+  form
+  :is(input, textarea, select, option) {
   padding: 6px 13px;
   margin-bottom: 1rem;
   border-radius: 10px;
   border: 2px solid #ccc;
 }
 
-#add-staff-form form input[type="file"] {
+:is(#add-student-form, #add-staff-form) form input[type="file"] {
   border: unset;
 }
 
-#add-staff-form form > div {
+:is(#add-student-form, #add-staff-form) form > div {
   text-align: right;
 }
 
-#add-staff-form form :is(button[type="submit"], button[type="reset"]) {
+:is(#add-student-form, #add-staff-form)
+  form
+  :is(button[type="submit"], button[type="reset"]) {
   padding: 0.4rem 1.4rem;
   margin-right: 0.5rem;
   border-radius: 5px;
@@ -3780,15 +3792,17 @@ footer a {
   transform: scale(0.95);
 }
 
-#add-staff-form form :is(button[type="submit"], button[type="reset"]):hover {
+:is(#add-student-form, #add-staff-form)
+  form
+  :is(button[type="submit"], button[type="reset"]):hover {
   transform: scale(1);
 }
 
-#add-staff-form form button[type="reset"] {
+:is(#add-student-form, #add-staff-form) form button[type="reset"] {
   color: var(--theme-primary-color);
 }
 
-#add-staff-form form button[type="submit"] {
+:is(#add-student-form, #add-staff-form) form button[type="submit"] {
   background: var(--theme-primary-color);
   color: #fff;
 }
