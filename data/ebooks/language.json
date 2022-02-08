@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Afrikaans",
+    "value": "afrikaans"
+  },
+  {
+    "name": "English",
+    "value": "english"
+  },
+  {
+    "name": "Isindebele",
+    "value": "isindebele"
+  },
+  {
+    "name": "Isixhosa",
+    "value": "isixhosa"
+  },
+  {
+    "name": "Isizulu",
+    "value": "isizulu"
+  },
+  {
+    "name": "Sepedi",
+    "value": "sepedi"
+  },
+  {
+    "name": "Sesotho",
+    "value": "sesotho"
+  },
+  {
+    "name": "Setswana",
+    "value": "setswana"
+  },
+  {
+    "name": "Siswati",
+    "value": "siswati"
+  },
+  {
+    "name": "Tshivenda",
+    "value": "tshovenda"
+  },
+  {
+    "name": "Xitsonga",
+    "value": "xitsonga"
+  }
+]

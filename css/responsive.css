@@ -138,6 +138,10 @@
   #call-to-action .container p:nth-child(3) {
     padding: 0 5rem;
   }
+
+  #call-to-action .container div {
+    padding: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -180,14 +184,6 @@
 
   #call-to-action .container p:nth-child(3) {
     font-size: 0.8rem;
-  }
-
-  #call-to-action .container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   #call-to-action .btn {
@@ -2312,71 +2308,102 @@
  =========================================================================================================================
   Section#add-staff-form
   Section#add-student-form
+  Section#download-book-form
  =========================================================================================================================
 */
 
 @media (max-width: 1400px) {
-  :is(#add-student-form, #add-staff-form) form h2 {
+  :is(#add-student-form, #add-staff-form, #download-book-form) form h2 {
     font-size: 1.7rem;
   }
 
-  :is(#add-student-form, #add-staff-form) article div:nth-child(1) h3 {
+  :is(#add-student-form, #add-staff-form, #download-book-form)
+    article
+    div:nth-child(1)
+    h3 {
     font-size: 1.1rem;
   }
 
-  :is(#add-student-form, #add-staff-form) article div:nth-child(1) p {
+  :is(#add-student-form, #add-staff-form, #download-book-form)
+    article
+    div:nth-child(1)
+    p {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 992px) {
-  :is(#add-student-form, #add-staff-form) article {
+  :is(#add-student-form, #add-staff-form, #download-book-form) article {
     grid-template-columns: 100%;
     gap: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  :is(#add-student-form, #add-staff-form) form h2 {
+  :is(#add-student-form, #add-staff-form, #download-book-form) form h2 {
     font-size: 1.5rem;
   }
 
-  :is(#add-student-form, #add-staff-form) article {
+  :is(#add-student-form, #add-staff-form, #download-book-form) article {
     padding: 1rem;
   }
 }
 
 @media (max-width: 576px) {
-  :is(#add-student-form, #add-staff-form) {
+  :is(#add-student-form, #add-staff-form, #download-book-form) {
     padding: calc(1rem + var(--header-height)) 0 1rem;
   }
 
-  :is(#add-student-form, #add-staff-form) form {
+  :is(#add-student-form, #add-staff-form, #download-book-form) form {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
-  :is(#add-student-form, #add-staff-form) form h2 {
+  :is(#add-student-form, #add-staff-form, #download-book-form) form h2 {
     font-size: 1.3rem;
   }
 
-  :is(#add-student-form, #add-staff-form) article div:nth-child(1) h3 {
+  :is(#add-student-form, #add-staff-form, #download-book-form)
+    article
+    div:nth-child(1)
+    h3 {
     color: #555;
   }
 
-  :is(#add-student-form, #add-staff-form) article div:nth-child(1) p {
+  :is(#add-student-form, #add-staff-form, #download-book-form)
+    article
+    div:nth-child(1)
+    p {
     width: 100%;
     color: #999;
   }
 
-  :is(#add-student-form, #add-staff-form) article label {
+  :is(#add-student-form, #add-staff-form, #download-book-form) article label {
     color: #555;
   }
 
-  :is(#add-student-form, #add-staff-form)
+  :is(#add-student-form, #add-staff-form, #download-book-form)
     form
     :is(label, input, textarea, select, option) {
+    width: 100%;
+  }
+}
+
+/* 
+ =========================================================================================================================
+  Section#download-book-form
+ =========================================================================================================================
+*/
+
+@media (max-width: 1200px) {
+  #download-book-form article.download-section table {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  #download-book-form article.download-section table {
     width: 100%;
   }
 }

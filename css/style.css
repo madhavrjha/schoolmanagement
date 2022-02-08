@@ -319,12 +319,10 @@ aside .menu .item .sub-menu a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/pencils-1.png") no-repeat center bottom/contain;
+  /* background: url("../images/pencils-1.png") no-repeat center bottom/contain; */
 }
 
-#call-to-action p,
-#call-to-action h1,
-#call-to-action a {
+#call-to-action :is(p, h1, a) {
   position: relative;
   z-index: 2;
   text-align: center;
@@ -358,7 +356,9 @@ aside .menu .item .sub-menu a {
 
 #call-to-action .container > div {
   width: 100%;
-  display: flex;
+  padding: 0 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
 }
 
@@ -1409,6 +1409,20 @@ footer a {
 #our-staff .staffs img {
   width: 100%;
   border-radius: 1rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#our-staff .staffs.management img {
+  height: 260px;
+}
+
+#our-staff .staffs.educator img {
+  height: 200px;
+}
+
+#our-staff .staffs.other img {
+  height: 190px;
 }
 
 #our-staff .staffs p {
@@ -3707,15 +3721,16 @@ footer a {
  =========================================================================================================================
   Section#add-staff-form
   Section#add-student-form
+  Section#download-book-form
  =========================================================================================================================
 */
 
-:is(#add-student-form, #add-staff-form) {
+:is(#add-student-form, #add-staff-form, #download-book-form) {
   padding: calc(3rem + var(--header-height)) 0 3rem;
   background: url("../images/shapes-bg.png") repeat center center/contain;
 }
 
-:is(#add-student-form, #add-staff-form) form {
+:is(#add-student-form, #add-staff-form, #download-book-form) form {
   background: #f5f4fa;
   color: #29292b;
   padding: 2rem 1rem;
@@ -3725,7 +3740,7 @@ footer a {
   border-radius: 10px;
 }
 
-:is(#add-student-form, #add-staff-form) form h2 {
+:is(#add-student-form, #add-staff-form, #download-book-form) form h2 {
   color: #2c2c2e;
   font-weight: 700;
   font-family: sans-serif;
@@ -3734,7 +3749,7 @@ footer a {
   padding-bottom: 1rem;
 }
 
-:is(#add-student-form, #add-staff-form) article {
+:is(#add-student-form, #add-staff-form, #download-book-form) article {
   border-top: 2px solid #ccc;
   padding: 2rem;
   display: grid;
@@ -3742,18 +3757,24 @@ footer a {
   gap: 2rem;
 }
 
-:is(#add-student-form, #add-staff-form) article div:nth-child(1) h3 {
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  article
+  div:nth-child(1)
+  h3 {
   font-size: 1.2rem;
   color: #333;
 }
 
-:is(#add-student-form, #add-staff-form) article div:nth-child(1) p {
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  article
+  div:nth-child(1)
+  p {
   font-size: 1rem;
   color: #666;
   width: 90%;
 }
 
-:is(#add-student-form, #add-staff-form)
+:is(#add-student-form, #add-staff-form, #download-book-form)
   form
   :is(label, input, textarea, select, option) {
   box-sizing: border-box;
@@ -3762,7 +3783,7 @@ footer a {
   width: 90%;
 }
 
-:is(#add-student-form, #add-staff-form)
+:is(#add-student-form, #add-staff-form, #download-book-form)
   form
   :is(input, textarea, select, option) {
   padding: 6px 13px;
@@ -3771,15 +3792,17 @@ footer a {
   border: 2px solid #ccc;
 }
 
-:is(#add-student-form, #add-staff-form) form input[type="file"] {
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  form
+  input[type="file"] {
   border: unset;
 }
 
-:is(#add-student-form, #add-staff-form) form > div {
+:is(#add-student-form, #add-staff-form, #download-book-form) form > div {
   text-align: right;
 }
 
-:is(#add-student-form, #add-staff-form)
+:is(#add-student-form, #add-staff-form, #download-book-form)
   form
   :is(button[type="submit"], button[type="reset"]) {
   padding: 0.4rem 1.4rem;
@@ -3792,17 +3815,73 @@ footer a {
   transform: scale(0.95);
 }
 
-:is(#add-student-form, #add-staff-form)
+:is(#add-student-form, #add-staff-form, #download-book-form)
   form
   :is(button[type="submit"], button[type="reset"]):hover {
   transform: scale(1);
 }
 
-:is(#add-student-form, #add-staff-form) form button[type="reset"] {
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  form
+  button[type="reset"] {
   color: var(--theme-primary-color);
 }
 
-:is(#add-student-form, #add-staff-form) form button[type="submit"] {
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  form
+  button[type="submit"] {
   background: var(--theme-primary-color);
   color: #fff;
+}
+
+/* 
+ =========================================================================================================================
+  Section#download-book-form
+ =========================================================================================================================
+*/
+
+#download-book-form article.download-section {
+  display: block;
+  border-top: unset;
+}
+
+#download-book-form article.download-section table {
+  width: 60%;
+  margin: auto;
+}
+
+#download-book-form article.download-section table * {
+  border: unset;
+  text-align: center;
+}
+
+#download-book-form article.download-section thead {
+  border-bottom: 1.5px solid #888;
+}
+
+#download-book-form article.download-section tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#download-book-form article.download-section :is(td, th) {
+  padding: 0.7rem;
+}
+
+#download-book-form article.download-section table a {
+  padding: 0.2rem 1.1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  background: transparent;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 3px solid var(--theme-primary-color);
+  background-color: var(--theme-primary-color);
+  color: #fff;
+  transform: scale(0.95);
+}
+
+#download-book-form article.download-section table a:hover {
+  background: transparent;
+  color: var(--theme-primary-color);
 }
