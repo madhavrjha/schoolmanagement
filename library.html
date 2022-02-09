@@ -142,99 +142,15 @@
 
             <label for="">Book*</label>
             <select name="book" id="" required>
-              <option value="">Choose Language First..</option>
-              <option value="">Book 1</option>
-              <option value="">Book 2</option>
-              <option value="">Book 3</option>
-              <option value="">Book 4</option>
-              <option value="">Book 5</option>
-              <option value="">Book 6</option>
-              <option value="">Book 7</option>
-              <option value="">Book 8</option>
+              <option value="">Choose...</option>
             </select>
           </div>
         </article>
 
         <article class="download-section">
-          <table class="table table-hover" style="display: none;">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Grade</th>
-                <th scope="col">Language</th>
-                <th scope="col">Book</th>
-                <th scope="col">Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 1</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">2</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 2</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">3</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 3</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">4</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 4</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">5</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 5</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">6</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 6</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">7</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 7</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">8</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 8</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-            </tbody>
-          </table>
         </article>
 
-        <article class="group-guided-reading">
+        <!-- <article class="group-guided-reading">
           <div>
             <h3>Group Guided Reading</h3>
             <p>we have free books provided by government of south africa for grade one, grade two and grade three. these
@@ -277,9 +193,9 @@
             </select>
 
           </div>
-        </article>
+        </article> -->
 
-        <article class="download-section">
+        <!-- <article class="download-section">
           <table class="table table-hover">
             <thead>
               <tr>
@@ -356,7 +272,7 @@
               </tr>
             </tbody>
           </table>
-        </article>
+        </article> -->
 
       </form>
     </div>
@@ -422,6 +338,7 @@
     </div>
   </footer>
 
+
   <!-- jQuery  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -431,6 +348,9 @@
   <!-- Animate On Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+  <!-- PDFJS -->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
   <!-- Custom Script -->
   <script src="./js/main.js"></script>
 
@@ -439,7 +359,6 @@
     // Fill grades in option from Data File
 
     class StoryTelling {
-
 
       static loadGrade() {
         const storytellingGrade = document.querySelector(`#download-book-form .story-telling select[name="grade"]`);
@@ -475,19 +394,35 @@
         xml.send();
       }
 
-      static loadBook() {
+      static loadBook(selectedGrade, selectedLanguage) {
         const storytellingBook = document.querySelector(`#download-book-form .story-telling select[name="book"]`);
+        const downloadSection = document.querySelector(`#download-book-form .download-section`);
         const xml = new XMLHttpRequest();
         xml.onload = function () {
+
           const BookData = JSON.parse(this.responseText);
+          storytellingBook.innerHTML = `<option value="">Choose...</option>`;
+          downloadSection.innerHTML = "";
+          BookData.forEach(book => {
+            if (selectedGrade == book.grade && selectedLanguage == book.language) {
+              const bookOptionElement = document.createElement('option');
+              bookOptionElement.setAttribute('value', `${book.id}`);
+              bookOptionElement.appendChild(document.createTextNode(`${book.title}`));
+              storytellingBook.appendChild(bookOptionElement);
 
-          BookData.forEach(language => {
-            const selectedLanguage = document.querySelector(`#download-book-form .story-telling select[name="language"]`);
-            const selectedGrade = document.querySelector(`#download-book-form .story-telling select[name="grade"]`);
-
-
-
-
+              downloadSection.innerHTML += `
+                <div class="box">
+                  <p>A Big Book of Little Stories</p>
+                  <div>
+                    <p><b>${book.title}</b>, Grade ${book.grade}, ${book.language}</p>
+                  </div>
+                  <p>${((book.size) / 1024).toFixed(2)} MB</p>
+                  <a href="${book.url}" download="${book.url}">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              `;
+            }
           });
         }
         xml.open("GET", "./data/ebooks/book.json", true);
@@ -495,9 +430,66 @@
       }
     }
 
+
     StoryTelling.loadGrade();
     StoryTelling.loadLanguage();
 
+    const storytellingGrade = document.querySelector(`#download-book-form .story-telling select[name="grade"]`);
+    const storytellingLanguage = document.querySelector(`#download-book-form .story-telling select[name="language"]`);
+    const storytellingBook = document.querySelector(`#download-book-form .story-telling select[name="book"]`);
+
+    storytellingGrade.addEventListener('change', loadBookList);
+    storytellingLanguage.addEventListener('change', loadBookList);
+    storytellingBook.addEventListener('change', downloadBook);
+
+    function loadBookList() {
+      const selectedGrade = storytellingGrade.value;
+      const selectedLanguage = storytellingLanguage.value;
+
+      if (selectedGrade != "" && selectedLanguage != "") {
+        console.log(selectedGrade, selectedLanguage);
+        StoryTelling.loadBook(selectedGrade, selectedLanguage);
+      }
+    }
+
+    // This Needs to be Changed
+    function downloadBook() {
+      const downloadSection = document.querySelector(`#download-book-form .download-section`);
+      downloadSection.innerHTML = "";
+
+      const bookID = storytellingBook.value;
+      console.log("Book ID is " + bookID);
+
+      if (bookID == "") loadBookList();
+
+      const xml = new XMLHttpRequest();
+      xml.onload = function () {
+        const bookData = JSON.parse(this.responseText);
+        bookData.forEach(book => {
+          if (bookID == book.id) {
+            console.log(book.id);
+            downloadSection.innerHTML += `
+                <div class="box">
+                  <p>A Big Book of Little Stories</p>
+                  <div>
+                    <p><b>${book.title}</b>, Grade ${book.grade}, ${book.language}</p>
+                  </div>
+                  <p>${((book.size) / 1024).toFixed(2)} MB</p>
+                  <a href="${book.url}" download="${book.url}">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              `;
+          }
+        });
+      }
+      xml.open("GET", "./data/ebooks/book.json", true);
+      xml.send();
+
+
+
+
+    }
 
 
 

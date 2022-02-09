@@ -3841,33 +3841,39 @@ footer a {
 */
 
 #download-book-form article.download-section {
-  display: block;
   border-top: unset;
-}
-
-#download-book-form article.download-section table {
-  width: 60%;
-  margin: auto;
-}
-
-#download-book-form article.download-section table * {
-  border: unset;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
   text-align: center;
 }
 
-#download-book-form article.download-section thead {
-  border-bottom: 1.5px solid #888;
+#download-book-form article.download-section .box {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s;
 }
 
-#download-book-form article.download-section tbody tr {
-  border-bottom: 1px solid #ddd;
+#download-book-form article.download-section .box:hover {
+  transform: scale(1.05);
 }
 
-#download-book-form article.download-section :is(td, th) {
-  padding: 0.7rem;
+#download-book-form article.download-section .box div {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#download-book-form article.download-section table a {
+#download-book-form article.download-section .box p {
+  color: #000 !important;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+#download-book-form article.download-section .box a {
   padding: 0.2rem 1.1rem;
   margin-right: 0.5rem;
   border-radius: 5px;
@@ -3878,10 +3884,8 @@ footer a {
   border: 3px solid var(--theme-primary-color);
   background-color: var(--theme-primary-color);
   color: #fff;
-  transform: scale(0.95);
 }
 
-#download-book-form article.download-section table a:hover {
-  background: transparent;
-  color: var(--theme-primary-color);
+#download-book-form article.download-section .box a:hover {
+  opacity: 0.9;
 }

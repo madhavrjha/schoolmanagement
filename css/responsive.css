@@ -2403,7 +2403,13 @@
 }
 
 @media (max-width: 992px) {
-  #download-book-form article.download-section table {
-    width: 100%;
+  #download-book-form article.download-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #download-book-form article.download-section {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
