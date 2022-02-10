@@ -3842,8 +3842,8 @@ footer a {
 
 #download-book-form article.download-section {
   border-top: unset;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   align-items: stretch;
@@ -3851,41 +3851,83 @@ footer a {
 }
 
 #download-book-form article.download-section .box {
-  background: #fff;
-  padding: 1rem 1.5rem;
+  background: url("../images/book-cover.jpeg") no-repeat center center/cover;
+  width: 200px;
+  height: 300px;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.5s;
+  position: relative;
 }
 
 #download-book-form article.download-section .box:hover {
   transform: scale(1.05);
 }
 
-#download-book-form article.download-section .box div {
-  display: flex;
-  flex-wrap: wrap;
+#download-book-form article.download-section .box > p:first-child {
+  text-align: center;
+  /* font-family: "Sacramento", cursive; */
+  font-family: cursive;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+#download-book-form article.download-section .box > p:nth-child(3) {
+  position: absolute;
+  left: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  bottom: 2.5rem;
+  color: #999;
+}
+
+#download-book-form article.download-section .box div p {
+  color: #888;
+  line-height: 2;
+  font-size: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+#download-book-form article.download-section .box div b {
+  font-family: "Cabin Sketch";
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+#download-book-form article.download-section .box div span {
+  background: #888;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 0px 5px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: capitalize;
 }
 
 #download-book-form article.download-section .box p {
-  color: #000 !important;
   font-size: 0.9rem;
   width: 100%;
 }
 
 #download-book-form article.download-section .box a {
-  padding: 0.2rem 1.1rem;
-  margin-right: 0.5rem;
-  border-radius: 5px;
-  background: transparent;
-  font-weight: 500;
-  font-size: 0.9rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  /* font-family: "Sacramento", cursive; */
+  font-family: cursive;
   text-decoration: none;
-  border: 3px solid var(--theme-primary-color);
-  background-color: var(--theme-primary-color);
-  color: #fff;
+  color: #ccc;
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
 #download-book-form article.download-section .box a:hover {
-  opacity: 0.9;
+  color: #fff;
 }

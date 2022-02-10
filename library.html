@@ -124,10 +124,11 @@
         <article class="story-telling">
           <div>
             <h3>A Big Book of Little Stories</h3>
-            <p>we have free books provided by government of south africa for grade one, grade two and grade three. these
-              could be used to story telling and group guided reading. and books are available in most of the languages.
-              you just need to select the grade, language and book name afterwords you will be able to download the
-              book and read it for free.</p>
+            <p>We have free books provided by the Government of South Africa for Grade One, Grade Two, and Grade Three.
+              These could be
+              used for storytelling and group guided reading, and books are available in most languages. You just need
+              to select the
+              Grade, language, and book name afterword's you will be able to download the book and read it for free.</p>
           </div>
           <div>
             <label for="designation">Grade*</label>
@@ -149,130 +150,6 @@
 
         <article class="download-section">
         </article>
-
-        <!-- <article class="group-guided-reading">
-          <div>
-            <h3>Group Guided Reading</h3>
-            <p>we have free books provided by government of south africa for grade one, grade two and grade three. these
-              could be used to story telling and group guided reading and arranged by levels. and books are available in
-              most of the languages.
-              you just need to select the grade, language and book name afterwords you will be able to download the
-              book and read it for free.</p>
-          </div>
-          <div>
-
-            <label for="designation">Grade*</label>
-            <select name="" id="designation" required>
-              <option value="">Choose..</option>
-              <option value="">Grade 1</option>
-              <option value="">Grade 2</option>
-              <option value="">Grade 3</option>
-            </select>
-
-            <label for="contract-type">Language*</label>
-            <select name="" id="" required>
-              <option value="">Choose..</option>
-              <option value="">Afrikaans</option>
-              <option value="">English</option>
-              <option value="">Isindebele</option>
-              <option value="">Isixhosa</option>
-              <option value="">Xitsonga</option>
-            </select>
-
-            <label for="contract-type">Book*</label>
-            <select name="" id="" required>
-              <option value="">Choose..</option>
-              <option value="">Book 1</option>
-              <option value="">Book 2</option>
-              <option value="">Book 3</option>
-              <option value="">Book 4</option>
-              <option value="">Book 5</option>
-              <option value="">Book 6</option>
-              <option value="">Book 7</option>
-              <option value="">Book 8</option>
-            </select>
-
-          </div>
-        </article> -->
-
-        <!-- <article class="download-section">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Grade</th>
-                <th scope="col">Language</th>
-                <th scope="col">Book</th>
-                <th scope="col">Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 1</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">2</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 2</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">3</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 3</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">4</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 4</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">5</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 5</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">6</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 6</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">7</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 7</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-
-              <tr>
-                <th scope="row">8</th>
-                <td>Grade 2</td>
-                <td>Isindebele</td>
-                <td>Book 8</td>
-                <td> <a href="./samplePDF.pdf">Download</a> </td>
-              </tr>
-            </tbody>
-          </table>
-        </article> -->
 
       </form>
     </div>
@@ -414,11 +291,11 @@
                 <div class="box">
                   <p>A Big Book of Little Stories</p>
                   <div>
-                    <p><b>${book.title}</b>, Grade ${book.grade}, ${book.language}</p>
+                    <p><b>${book.title}</b> <br> Grade ${book.grade} <br> <span>${book.language}</span></p>
                   </div>
                   <p>${((book.size) / 1024).toFixed(2)} MB</p>
-                  <a href="${book.url}" download="${book.url}">
-                    <i class="fas fa-download"></i> Download
+                  <a href="${book.url}" target="_blank" download="${book.url}">
+                    <i class="fas fa-download"></i> Download Book
                   </a>
                 </div>
               `;
@@ -472,11 +349,11 @@
                 <div class="box">
                   <p>A Big Book of Little Stories</p>
                   <div>
-                    <p><b>${book.title}</b>, Grade ${book.grade}, ${book.language}</p>
+                    <p><b>${book.title}</b> <br> Grade ${book.grade} <br> <span>${book.language}</span></p>
                   </div>
                   <p>${((book.size) / 1024).toFixed(2)} MB</p>
-                  <a href="${book.url}" download="${book.url}">
-                    <i class="fas fa-download"></i> Download
+                  <a href="${book.url}" target="_blank" download="${book.url}">
+                    <i class="fas fa-download"></i> Download Book
                   </a>
                 </div>
               `;
