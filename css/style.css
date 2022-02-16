@@ -3865,61 +3865,60 @@ footer a {
   transform: scale(1.05);
 }
 
+#download-book-form article.download-section .box > p {
+  width: 100%;
+}
+
 #download-book-form article.download-section .box > p:first-child {
   text-align: center;
-  /* font-family: "Sacramento", cursive; */
   font-family: cursive;
   font-size: 1.4rem;
-  padding-top: 1rem;
+  padding-top: 10px;
   color: #ccc;
   margin-bottom: 0;
 }
 
-#download-book-form article.download-section .box > p:nth-child(3) {
-  position: absolute;
-  left: 0;
-  font-family: "Rubik", sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  bottom: 2.5rem;
-  color: #999;
-}
-
-#download-book-form article.download-section .box div p {
-  color: #888;
-  line-height: 2;
-  font-size: "Poppins", sans-serif;
-  font-size: 1rem;
-}
-
-#download-book-form article.download-section .box div b {
+#download-book-form article.download-section .box > p:nth-child(2) {
   font-family: "Cabin Sketch";
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 900;
   line-height: 1;
+  padding-top: 10px;
+  color: #999;
+  margin-bottom: 13px;
 }
 
-#download-book-form article.download-section .box div span {
+#download-book-form article.download-section .box > p:nth-child(3) {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+#download-book-form article.download-section .box p:nth-child(4) span {
   background: #888;
   border-radius: 2px;
   display: inline-block;
-  padding: 0px 5px;
-  margin-top: 12px;
+  padding: 2px 5px;
   letter-spacing: 2px;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: capitalize;
 }
 
-#download-book-form article.download-section .box p {
-  font-size: 0.9rem;
-  width: 100%;
+#download-book-form article.download-section .box > p:nth-child(5) {
+  text-transform: uppercase;
+  color: #888;
+  padding-top: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
 }
 
 #download-book-form article.download-section .box a {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0;
-  /* font-family: "Sacramento", cursive; */
   font-family: cursive;
   text-decoration: none;
   color: #ccc;

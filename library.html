@@ -290,9 +290,9 @@
               downloadSection.innerHTML += `
                 <div class="box">
                   <p>A Big Book of Little Stories</p>
-                  <div>
-                    <p><b>${book.title}</b> <br> Grade ${book.grade} <br> <span>${book.language}</span></p>
-                  </div>
+                  <p>${book.title}</p>
+                  <p>Grade ${book.grade}</p>
+                  <p><span>${book.language}</span></p>
                   <p>${((book.size) / 1024).toFixed(2)} MB</p>
                   <a href="${book.url}" target="_blank" download="${book.url}">
                     <i class="fas fa-download"></i> Download Book
@@ -348,9 +348,9 @@
             downloadSection.innerHTML += `
                 <div class="box">
                   <p>A Big Book of Little Stories</p>
-                  <div>
-                    <p><b>${book.title}</b> <br> Grade ${book.grade} <br> <span>${book.language}</span></p>
-                  </div>
+                  <p>${book.title}</p>
+                  <p>Grade ${book.grade}</p>
+                  <p><span>${book.language}</span></p>
                   <p>${((book.size) / 1024).toFixed(2)} MB</p>
                   <a href="${book.url}" target="_blank" download="${book.url}">
                     <i class="fas fa-download"></i> Download Book
