@@ -2501,3 +2501,13 @@
     bottom: 1rem;
   }
 }
+
+/* 
+  Section#download-book-form article.mind-the-gap
+*/
+
+@media (max-width: 576px) {
+  section#download-book-form .mind-the-gap .table-container :is(td, th) {
+      font-size: 0.7rem;
+    }
+}

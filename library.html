@@ -1,299 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap 5 Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    />
 
-  <!-- BootStrap 5 Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-  <!-- Font Awesome Icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Animate On Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
-  <link rel="stylesheet" href="./css/utility.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+    <title>Mveledzandivho Primary - Library</title>
+  </head>
 
-  <title>Mveledzandivho Primary - Library</title>
-</head>
+  <body>
+    <!-- Header Section -->
 
-<body>
-
-  <!-- Header Section -->
-
-  <header>
-    <div class="container">
-      <i class="fas fa-bars"></i>
-      <img src="./images/brand.png" alt="brand-icon">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./admission.html">Apply</a></li>
-        <li>
-          <a href="#">School Life <i class="fa-solid fa-sort-down"></i></a>
-          <ul>
-            <li><a href="./gallery.html">Gallery</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">General <i class="fa-solid fa-sort-down"></i></a>
-          <ul>
-            <li><a href="./notice.html">Notice Board</a></li>
-            <li class="active"><a href="./library.html">Study Materials</a></li>
-            <li><a href="./wall-of-fame.html">School Wall of Fame</a></li>
-            <li><a href="./blog.html">School News</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">About <i class="fa-solid fa-sort-down"></i></a>
-          <ul>
-            <li><a href="./about.html">Our School</a></li>
-            <li><a href="./staff.html">Our Staff</a></li>
-            <li><a href="./alumni.html">Our Alumni</a></li>
-            <li><a href="./all-sponsors.html">Our Sponsors</a></li>
-          </ul>
-        </li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
-      <a href="./login.html" class="btn login-btn">Log In</a>
-    </div>
-  </header>
-
-  <!-- Side Navigation -->
-
-  <aside>
-
-    <div class="close-btn">
-      <i class="fas fa-times"></i>
-    </div>
-
-    <div class="header">
-      <img src="./images/brand.png" alt="brand-icon">
-    </div>
-
-    <div class="buttons">
-      <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
-      <a href="./login.html" class="btn">Login</a>
-    </div>
-
-
-    <div class="menu">
-      <div class="item"><a href="./index.html"><i class="fas fa-home"> </i>Home</a></div>
-      <div class="item"><a href="./admission.html"><i class="fas fa-file"> </i>Apply</a></div>
-      <div class="item">
-        <a class="sub-btn"><i class="fas fa-child"> </i>School Life <i class="fas fa-angle-right dropdown"></i></a>
-        <div class="sub-menu">
-          <a href="./gallery.html" class="sub-item">Gallery</a>
-        </div>
+    <header>
+      <div class="container">
+        <i class="fas fa-bars"></i>
+        <img src="./images/brand.png" alt="brand-icon" />
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./admission.html">Apply</a></li>
+          <li>
+            <a href="#">School Life <i class="fa-solid fa-sort-down"></i></a>
+            <ul>
+              <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">General <i class="fa-solid fa-sort-down"></i></a>
+            <ul>
+              <li><a href="./notice.html">Notice Board</a></li>
+              <li class="active">
+                <a href="./library.html">Study Materials</a>
+              </li>
+              <li><a href="./wall-of-fame.html">School Wall of Fame</a></li>
+              <li><a href="./blog.html">School News</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">About <i class="fa-solid fa-sort-down"></i></a>
+            <ul>
+              <li><a href="./about.html">Our School</a></li>
+              <li><a href="./staff.html">Our Staff</a></li>
+              <li><a href="./alumni.html">Our Alumni</a></li>
+              <li><a href="./all-sponsors.html">Our Sponsors</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+        <a href="./login.html" class="btn login-btn">Log In</a>
       </div>
-      <div class="item">
-        <a class="sub-btn"><i class="fas fa-cogs"> </i>General <i class="fas fa-angle-right dropdown"></i></a>
-        <div class="sub-menu">
-          <a href="./notice.html" class="sub-item">Notice Board</a>
-          <a href="./library.html" class="sub-item">Study Material</a>
-          <a href="./wall-of-fame.html" class="sub-item">School Wall of Fame</a>
-          <a href="./blog.html" class="sub-item">School News</a>
-        </div>
+    </header>
+
+    <!-- Side Navigation -->
+
+    <aside>
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
       </div>
-      <div class="item">
-        <a class="sub-btn"><i class="fas fa-info-circle"></i>About <i class="fas fa-angle-right dropdown"></i></a>
-        <div class="sub-menu">
-          <a href="./about.html" class="sub-item">Our School</a>
-          <a href="./staff.html" class="sub-item">Our Staff</a>
-          <a href="./alumni.html" class="sub-item">Our Alumni</a>
-          <a href="./all-sponsors.html" class="sub-item">Our Sponsors</a>
-        </div>
+
+      <div class="header">
+        <img src="./images/brand.png" alt="brand-icon" />
       </div>
-      <div class="item"><a href="./contact.html"><i class="fas fa-address-book"></i>Contact</a></div>
-    </div>
 
-  </aside>
+      <div class="buttons">
+        <a href="./sponsor.html" class="sponsor-btn">Sponsor Us</a>
+        <a href="./login.html" class="btn">Login</a>
+      </div>
 
-  <section id="download-book-form">
-    <div class="container">
-      <form action="#">
-        <h2><i class="fas fa-book-open"></i> Digital Library <small
-            style="display: block; font-size: 1rem; color: #888; font-weight: 400;">Choose a
-            Book</small></h2>
-
-        <article class="story-telling">
-          <div>
-            <h3>A Big Book of Little Stories</h3>
-            <p>We have free books provided by the Government of South Africa for Grade One, Grade Two, and Grade Three.
-              These could be
-              used for storytelling and group guided reading, and books are available in most languages. You just need
-              to select the
-              Grade, language, and book name afterword's you will be able to download the book and read it for free.</p>
+      <div class="menu">
+        <div class="item">
+          <a href="./index.html"><i class="fas fa-home"> </i>Home</a>
+        </div>
+        <div class="item">
+          <a href="./admission.html"><i class="fas fa-file"> </i>Apply</a>
+        </div>
+        <div class="item">
+          <a class="sub-btn"
+            ><i class="fas fa-child"> </i>School Life
+            <i class="fas fa-angle-right dropdown"></i
+          ></a>
+          <div class="sub-menu">
+            <a href="./gallery.html" class="sub-item">Gallery</a>
           </div>
-          <div>
-            <label for="designation">Grade*</label>
-            <select name="grade" required>
-              <option value="">Choose..</option>
-            </select>
+        </div>
+        <div class="item">
+          <a class="sub-btn"
+            ><i class="fas fa-cogs"> </i>General
+            <i class="fas fa-angle-right dropdown"></i
+          ></a>
+          <div class="sub-menu">
+            <a href="./notice.html" class="sub-item">Notice Board</a>
+            <a href="./library.html" class="sub-item">Study Material</a>
+            <a href="./wall-of-fame.html" class="sub-item"
+              >School Wall of Fame</a
+            >
+            <a href="./blog.html" class="sub-item">School News</a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="sub-btn"
+            ><i class="fas fa-info-circle"></i>About
+            <i class="fas fa-angle-right dropdown"></i
+          ></a>
+          <div class="sub-menu">
+            <a href="./about.html" class="sub-item">Our School</a>
+            <a href="./staff.html" class="sub-item">Our Staff</a>
+            <a href="./alumni.html" class="sub-item">Our Alumni</a>
+            <a href="./all-sponsors.html" class="sub-item">Our Sponsors</a>
+          </div>
+        </div>
+        <div class="item">
+          <a href="./contact.html"
+            ><i class="fas fa-address-book"></i>Contact</a
+          >
+        </div>
+      </div>
+    </aside>
 
-            <label for="">Language*</label>
-            <select name="language" required>
-              <option value="">Choose..</option>
-            </select>
+    <section id="download-book-form">
+      <div class="container">
+        <form action="#">
+          <h2><i class="fas fa-book-open"></i> Digital Library</h2>
 
-            <label for="">Book*</label>
-            <select name="book" id="" required>
-              <option value="">Choose...</option>
-            </select>
+          <article class="mind-the-gap">
+            <h4>Mind the Gap Study Guides Grade 12 CAPS Aligned</h4>
+            <p>
+              The Department of Basic Education has pleasure in releasing the
+              second edition of Mind the Gap study guides for Grade 12 learners.
+              These study guides continue the innovative and committed attempt
+              by the Department of Basic Education to improve the academic
+              performance of Grade 12 candidates in the National Senior
+              Certificate (NSC) examination.
+            </p>
+            <p>
+              The second edition of Mind the Gap is aligned to the Curriculum
+              and Assessment Policy Statement (CAPS).
+            </p>
+
+            <h4>English First Additional Language Study Guides</h4>
+
+            <div class="table-container">
+              <table>
+                <tr>
+                  <th colspan="3">EFAL Paper I</th>
+                </tr>
+                <tr>
+                  <th>Title</th>
+                  <th>Size</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Language and Context</td>
+                  <td>4.34 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/language-and-context.pdf"
+                      download="language-and-context-grade-12.pdf"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+              </table>
+
+              <table>
+                <tr>
+                  <th colspan="3">EFAL Paper II</th>
+                </tr>
+                <tr>
+                  <th>Title</th>
+                  <th>Size</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Romeo and Jullet</td>
+                  <td>3.62 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/romeo-and-juliet.pdf"
+                      download="romeo-and-jullet"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nothing but the Truth</td>
+                  <td>1.73 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/nothing-but-the-truth.pdf"
+                      download="nothing-but-the-truth"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Grain of Wheat</td>
+                  <td>5.68 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/grain-of-wheat.pdf"
+                      download="grain-of-wheat"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lord of the Files</td>
+                  <td>4.04 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/lord-of-the-files.pdf"
+                      download="lord-of-the-files"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>To Kill a Mocking Bird</td>
+                  <td>2.69 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/to-kill-a-mocking-bird.pdf"
+                      download="to-kill-a-mocking-bird"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Poetry</td>
+                  <td>4.41 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/poetry.pdf"
+                      download="poetry"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Short Stories</td>
+                  <td>3.08 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/short-stories.pdf"
+                      download="short-stories"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+              </table>
+
+              <table>
+                <tr>
+                  <th colspan="3">EFAL Paper III</th>
+                </tr>
+                <tr>
+                  <th>Title</th>
+                  <th>Size</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Writing</td>
+                  <td>6.26 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/writing.pdf"
+                      download="writing"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+              </table>
+
+              <table>
+                <tr>
+                  <th colspan="3">Subject Study Guides in English</th>
+                </tr>
+                <tr>
+                  <th>Title</th>
+                  <th>Size</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Accounting</td>
+                  <td>12.39 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/accounting.pdf"
+                      download="accounting"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Economics</td>
+                  <td>10.98 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/economics.pdf"
+                      download="economics"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Life Sciences</td>
+                  <td>9.47 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/grography-map-2.pdf"
+                      download="life-sciences"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Geography</td>
+                  <td>22.96 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/geography.pdf"
+                      download="geography"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Geography Map 1</td>
+                  <td>90.65 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/geography-map-1.pdf"
+                      download="g-map-1"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Geography Map 2</td>
+                  <td>17.25 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/grography-map-2.pdf"
+                      download="g-map-2"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Geography Map 3</td>
+                  <td>24.15 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/geography-map-3.pdf"
+                      download="g-map-3"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mathematics</td>
+                  <td>29.68 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/mathematics.pdf"
+                      download="mathematics"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mathematics Literacy</td>
+                  <td>6.02 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/mathematical-literacy.pdf"
+                      download="mathematics=-literacy"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Physical Sciences: Physics</td>
+                  <td>14.86 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/physics.pdf"
+                      download="physical-sciences-physics"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Physical Sciences: Chemistry</td>
+                  <td>24.45 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/chemistry.pdf"
+                      download="physical-sciences-chemistry"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+              </table>
+
+              <table>
+                <tr>
+                  <th colspan="3">Subject Study Guides in Afrikaans</th>
+                </tr>
+                <tr>
+                  <th>Title</th>
+                  <th>Size</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Rekeningkunde</td>
+                  <td>19.48 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/rekeningkunde.pdf"
+                      download="s1"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ekonomie</td>
+                  <td>11.27 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/ekonomie.pdf"
+                      download="s2"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lewenswetenskappe</td>
+                  <td>8.13 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/lewenswetenskappe.pdf"
+                      download="s3"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Geografie</td>
+                  <td>41.60 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/geografie.pdf"
+                      download="s4"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fisiese Wetenskap Deel 1 Fieika</td>
+                  <td>10.84 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/fisiese-wetenskap-deel-1-fieika.pdf"
+                      download="s5"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fisiese Wetenskap Deel 2 Chemie</td>
+                  <td>19.77 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/fisiese-wetenskap-deel-2-chemie.pdf"
+                      download="s6"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Wiskunde</td>
+                  <td>23.82 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/wiskunde.pdf"
+                      download="s7"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Wiskundige Geletterdheid</td>
+                  <td>15.66 MB</td>
+                  <td>
+                    <a
+                      target="_blank"
+                      href="https://schoolmanagementbooks.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/wiskundige-geletterdheid.pdf"
+                      download="s8"
+                      >Download</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </article>
+
+          <article class="story-telling">
+            <div>
+              <h3>A Big Book of Little Stories</h3>
+              <p>
+                We have free books provided by the Government of South Africa
+                for Grade One, Grade Two, and Grade Three. These could be used
+                for storytelling and group guided reading, and books are
+                available in most languages. You just need to select the Grade,
+                language, and book name afterword's you will be able to download
+                the book and read it for free.
+              </p>
+            </div>
+            <div>
+              <label for="designation">Grade*</label>
+              <select name="grade" required>
+                <option value="">Choose..</option>
+              </select>
+
+              <label for="">Language*</label>
+              <select name="language" required>
+                <option value="">Choose..</option>
+              </select>
+
+              <label for="">Book*</label>
+              <select name="book" id="" required>
+                <option value="">Choose...</option>
+              </select>
+            </div>
+          </article>
+
+          <article class="download-section"></article>
+        </form>
+      </div>
+    </section>
+
+    <!-- Get In Touch -->
+
+    <section id="get-in-touch">
+      <div class="container">
+        <article>
+          <div data-aos="fade-up-right">
+            <h2>450</h2>
+            <p>Students</p>
+          </div>
+          <div data-aos="fade-up-right">
+            <h2>30</h2>
+            <p>Faculty</p>
+          </div>
+          <div data-aos="fade-up-right">
+            <h2>24</h2>
+            <p>After School Programs</p>
+          </div>
+          <div data-aos="fade-up-right">
+            <h2>51</h2>
+            <p>Years Established</p>
           </div>
         </article>
 
-        <article class="download-section">
+        <article data-aos="fade-up-left">
+          <h2>Get In Touch</h2>
+
+          <p>Location: 1243 Divi St., San Francisco, CA 92421</p>
+
+          <p>Telephone: (435) 123-3566</p>
+
+          <p>Email: hello@divi.edu</p>
+
+          <p>School Hours: M-F: 8am – 3pm</p>
+
+          <a href="./contact.html" class="btn">Contact Us</a>
         </article>
+      </div>
 
-      </form>
-    </div>
-  </section>
+      <div class="policy" data-aos="fade-up">
+        <p>Non-Discrimination Policy</p>
+        <p>
+          By accessing, using and/or interacting with Mveledzandivho Primary via
+          its online and/or electronic platforms such as its website and
+          application, you consent to the processing of your personal
+          information by Mveledzandivho Primary. The Processing of personal
+          information will be done in accordance with its POPI Policy.  Should
+          you not consent, you must cease your interaction with Mveledzandivho
+          Primary on any and every platform.
+        </p>
+      </div>
+    </section>
 
+    <footer>
+      <div class="container">
+        <p>&copy; 2021, Mveledzandivho Primary School. All right reserved.</p>
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-  <!-- Get In Touch -->
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <section id="get-in-touch">
-    <div class="container">
-      <article>
-        <div data-aos="fade-up-right">
-          <h2>450</h2>
-          <p>Students</p>
-        </div>
-        <div data-aos="fade-up-right">
-          <h2>30</h2>
-          <p>Faculty</p>
-        </div>
-        <div data-aos="fade-up-right">
-          <h2>24</h2>
-          <p>After School Programs</p>
-        </div>
-        <div data-aos="fade-up-right">
-          <h2>51</h2>
-          <p>Years Established</p>
-        </div>
-      </article>
+    <!-- Bootstrap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
-      <article data-aos="fade-up-left">
-        <h2>Get In Touch</h2>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-        <p>Location: 1243 Divi St., San Francisco, CA 92421</p>
+    <!-- PDFJS -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 
-        <p>Telephone: (435) 123-3566</p>
+    <!-- Custom Script -->
+    <script src="./js/main.js"></script>
 
-        <p>Email: hello@divi.edu</p>
+    <script>
+      // Fill grades in option from Data File
 
-        <p>School Hours: M-F: 8am – 3pm</p>
+      class StoryTelling {
+        static loadGrade() {
+          const storytellingGrade = document.querySelector(
+            `#download-book-form .story-telling select[name="grade"]`
+          );
+          const xml = new XMLHttpRequest();
+          xml.onload = function () {
+            const gradeData = JSON.parse(this.responseText);
 
-        <a href="./contact.html" class="btn">Contact Us</a>
-      </article>
-    </div>
-
-    <div class="policy" data-aos="fade-up">
-      <p>Non-Discrimination Policy</p>
-      <p>By accessing, using and/or interacting with Mveledzandivho Primary via its online and/or electronic platforms
-        such as
-        its website and application, you consent to the processing of your personal information by Mveledzandivho
-        Primary.
-        The Processing of personal information will be done in accordance with its POPI Policy.  Should you not
-        consent, you must cease your interaction with Mveledzandivho Primary on any and every platform.</p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2021, Mveledzandivho Primary School. All right reserved.</p>
-      <ul>
-        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-
-
-  <!-- jQuery  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- Bootstrap  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-
-  <!-- Animate On Scroll -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-  <!-- PDFJS -->
-  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-
-  <!-- Custom Script -->
-  <script src="./js/main.js"></script>
-
-  <script>
-
-    // Fill grades in option from Data File
-
-    class StoryTelling {
-
-      static loadGrade() {
-        const storytellingGrade = document.querySelector(`#download-book-form .story-telling select[name="grade"]`);
-        const xml = new XMLHttpRequest();
-        xml.onload = function () {
-          const gradeData = JSON.parse(this.responseText);
-
-          gradeData.forEach(grade => {
-            const dynamicGradeOption = document.createElement('option');
-            dynamicGradeOption.setAttribute('value', `${grade.value}`);
-            dynamicGradeOption.innerText = grade.name;
-            storytellingGrade.appendChild(dynamicGradeOption);
-          });
+            gradeData.forEach((grade) => {
+              const dynamicGradeOption = document.createElement("option");
+              dynamicGradeOption.setAttribute("value", `${grade.value}`);
+              dynamicGradeOption.innerText = grade.name;
+              storytellingGrade.appendChild(dynamicGradeOption);
+            });
+          };
+          xml.open("GET", "./data/ebooks/grade.json", true);
+          xml.send();
         }
-        xml.open("GET", "./data/ebooks/grade.json", true);
-        xml.send();
+
+        static loadLanguage() {
+          const storytellingLanguage = document.querySelector(
+            `#download-book-form .story-telling select[name="language"]`
+          );
+          const xml = new XMLHttpRequest();
+          xml.onload = function () {
+            const languageData = JSON.parse(this.responseText);
+
+            languageData.forEach((language) => {
+              const dynamicLanguageOption = document.createElement("option");
+              dynamicLanguageOption.setAttribute("value", `${language.value}`);
+              dynamicLanguageOption.innerText = language.name;
+              storytellingLanguage.appendChild(dynamicLanguageOption);
+            });
+          };
+          xml.open("GET", "./data/ebooks/language.json", true);
+          xml.send();
+        }
+
+        static loadBook(selectedGrade, selectedLanguage) {
+          const storytellingBook = document.querySelector(
+            `#download-book-form .story-telling select[name="book"]`
+          );
+          const downloadSection = document.querySelector(
+            `#download-book-form .download-section`
+          );
+          const xml = new XMLHttpRequest();
+          xml.onload = function () {
+            const BookData = JSON.parse(this.responseText);
+            storytellingBook.innerHTML = `<option value="">Choose...</option>`;
+            downloadSection.innerHTML = "";
+            BookData.forEach((book) => {
+              if (
+                selectedGrade == book.grade &&
+                selectedLanguage == book.language
+              ) {
+                const bookOptionElement = document.createElement("option");
+                bookOptionElement.setAttribute("value", `${book.id}`);
+                bookOptionElement.appendChild(
+                  document.createTextNode(`${book.title}`)
+                );
+                storytellingBook.appendChild(bookOptionElement);
+
+                downloadSection.innerHTML += `
+                <div class="box">
+                  <p>A Big Book of Little Stories</p>
+                  <p>${book.title}</p>
+                  <p>Grade ${book.grade}</p>
+                  <p><span>${book.language}</span></p>
+                  <p>${(book.size / 1024).toFixed(2)} MB</p>
+                  <a href="${book.url}" target="_blank" download="${book.url}">
+                    <i class="fas fa-download"></i> Download Book
+                  </a>
+                </div>
+              `;
+              }
+            });
+          };
+          xml.open("GET", "./data/ebooks/book.json", true);
+          xml.send();
+        }
       }
 
-      static loadLanguage() {
-        const storytellingLanguage = document.querySelector(`#download-book-form .story-telling select[name="language"]`);
-        const xml = new XMLHttpRequest();
-        xml.onload = function () {
-          const languageData = JSON.parse(this.responseText);
+      StoryTelling.loadGrade();
+      StoryTelling.loadLanguage();
 
-          languageData.forEach(language => {
-            const dynamicLanguageOption = document.createElement('option');
-            dynamicLanguageOption.setAttribute('value', `${language.value}`);
-            dynamicLanguageOption.innerText = language.name;
-            storytellingLanguage.appendChild(dynamicLanguageOption);
-          });
+      const storytellingGrade = document.querySelector(
+        `#download-book-form .story-telling select[name="grade"]`
+      );
+      const storytellingLanguage = document.querySelector(
+        `#download-book-form .story-telling select[name="language"]`
+      );
+      const storytellingBook = document.querySelector(
+        `#download-book-form .story-telling select[name="book"]`
+      );
+
+      storytellingGrade.addEventListener("change", loadBookList);
+      storytellingLanguage.addEventListener("change", loadBookList);
+      storytellingBook.addEventListener("change", downloadBook);
+
+      function loadBookList() {
+        const selectedGrade = storytellingGrade.value;
+        const selectedLanguage = storytellingLanguage.value;
+
+        if (selectedGrade != "" && selectedLanguage != "") {
+          console.log(selectedGrade, selectedLanguage);
+          StoryTelling.loadBook(selectedGrade, selectedLanguage);
         }
-        xml.open("GET", "./data/ebooks/language.json", true);
-        xml.send();
       }
 
-      static loadBook(selectedGrade, selectedLanguage) {
-        const storytellingBook = document.querySelector(`#download-book-form .story-telling select[name="book"]`);
-        const downloadSection = document.querySelector(`#download-book-form .download-section`);
+      // This Needs to be Changed
+      function downloadBook() {
+        const downloadSection = document.querySelector(
+          `#download-book-form .download-section`
+        );
+        downloadSection.innerHTML = "";
+
+        const bookID = storytellingBook.value;
+        console.log("Book ID is " + bookID);
+
+        if (bookID == "") loadBookList();
+
         const xml = new XMLHttpRequest();
         xml.onload = function () {
-
-          const BookData = JSON.parse(this.responseText);
-          storytellingBook.innerHTML = `<option value="">Choose...</option>`;
-          downloadSection.innerHTML = "";
-          BookData.forEach(book => {
-            if (selectedGrade == book.grade && selectedLanguage == book.language) {
-              const bookOptionElement = document.createElement('option');
-              bookOptionElement.setAttribute('value', `${book.id}`);
-              bookOptionElement.appendChild(document.createTextNode(`${book.title}`));
-              storytellingBook.appendChild(bookOptionElement);
-
+          const bookData = JSON.parse(this.responseText);
+          bookData.forEach((book) => {
+            if (bookID == book.id) {
+              console.log(book.id);
               downloadSection.innerHTML += `
                 <div class="box">
                   <p>A Big Book of Little Stories</p>
                   <p>${book.title}</p>
                   <p>Grade ${book.grade}</p>
                   <p><span>${book.language}</span></p>
-                  <p>${((book.size) / 1024).toFixed(2)} MB</p>
+                  <p>${(book.size / 1024).toFixed(2)} MB</p>
                   <a href="${book.url}" target="_blank" download="${book.url}">
                     <i class="fas fa-download"></i> Download Book
                   </a>
@@ -301,77 +813,10 @@
               `;
             }
           });
-        }
+        };
         xml.open("GET", "./data/ebooks/book.json", true);
         xml.send();
       }
-    }
-
-
-    StoryTelling.loadGrade();
-    StoryTelling.loadLanguage();
-
-    const storytellingGrade = document.querySelector(`#download-book-form .story-telling select[name="grade"]`);
-    const storytellingLanguage = document.querySelector(`#download-book-form .story-telling select[name="language"]`);
-    const storytellingBook = document.querySelector(`#download-book-form .story-telling select[name="book"]`);
-
-    storytellingGrade.addEventListener('change', loadBookList);
-    storytellingLanguage.addEventListener('change', loadBookList);
-    storytellingBook.addEventListener('change', downloadBook);
-
-    function loadBookList() {
-      const selectedGrade = storytellingGrade.value;
-      const selectedLanguage = storytellingLanguage.value;
-
-      if (selectedGrade != "" && selectedLanguage != "") {
-        console.log(selectedGrade, selectedLanguage);
-        StoryTelling.loadBook(selectedGrade, selectedLanguage);
-      }
-    }
-
-    // This Needs to be Changed
-    function downloadBook() {
-      const downloadSection = document.querySelector(`#download-book-form .download-section`);
-      downloadSection.innerHTML = "";
-
-      const bookID = storytellingBook.value;
-      console.log("Book ID is " + bookID);
-
-      if (bookID == "") loadBookList();
-
-      const xml = new XMLHttpRequest();
-      xml.onload = function () {
-        const bookData = JSON.parse(this.responseText);
-        bookData.forEach(book => {
-          if (bookID == book.id) {
-            console.log(book.id);
-            downloadSection.innerHTML += `
-                <div class="box">
-                  <p>A Big Book of Little Stories</p>
-                  <p>${book.title}</p>
-                  <p>Grade ${book.grade}</p>
-                  <p><span>${book.language}</span></p>
-                  <p>${((book.size) / 1024).toFixed(2)} MB</p>
-                  <a href="${book.url}" target="_blank" download="${book.url}">
-                    <i class="fas fa-download"></i> Download Book
-                  </a>
-                </div>
-              `;
-          }
-        });
-      }
-      xml.open("GET", "./data/ebooks/book.json", true);
-      xml.send();
-
-
-
-
-    }
-
-
-
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>

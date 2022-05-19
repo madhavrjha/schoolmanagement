@@ -3794,6 +3794,33 @@ footer a {
 
 :is(#add-student-form, #add-staff-form, #download-book-form)
   form
+  button[type="button"] {
+  border: none;
+  outline: none;
+  background-color: rgba(0 0 0 / 10%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.6s;
+  margin-left: 1rem;
+}
+
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  form
+  button[type="button"]:hover {
+  background: rgba(0 0 0 / 80%);
+  color: #fff;
+}
+
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  form
+  button[type="button"]:active {
+  transform: scale(0.9);
+}
+
+:is(#add-student-form, #add-staff-form, #download-book-form)
+  form
   input[type="file"] {
   border: unset;
 }
@@ -3929,4 +3956,46 @@ footer a {
 
 #download-book-form article.download-section .box a:hover {
   color: #fff;
+}
+
+/* Section#download-book-form article.mind-the-gap */
+
+section#download-book-form .mind-the-gap {
+ display: block; 
+}
+
+section#download-book-form .mind-the-gap h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+section#download-book-form .mind-the-gap p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+section#download-book-form .mind-the-gap .table-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section#download-book-form .mind-the-gap .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0;
+}
+
+section#download-book-form .mind-the-gap .table-container :is(td, th) {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+section#download-book-form .mind-the-gap .table-container tr:not(:first-child) :is(td:first-child, th:first-child) {
+  text-align: left;
+}
+
+section#download-book-form .mind-the-gap .table-container table a {
+  text-decoration: none;
 }
