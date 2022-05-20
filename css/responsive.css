@@ -2509,5 +2509,7 @@
 @media (max-width: 576px) {
   section#download-book-form .mind-the-gap .table-container :is(td, th) {
       font-size: 0.7rem;
-    }
+      padding: 10px 5px;
+  }
+
 }

@@ -143,18 +143,20 @@
 
           <article class="mind-the-gap">
             <h4>Mind the Gap Study Guides Grade 12 CAPS Aligned</h4>
-            <p>
-              The Department of Basic Education has pleasure in releasing the
-              second edition of Mind the Gap study guides for Grade 12 learners.
-              These study guides continue the innovative and committed attempt
-              by the Department of Basic Education to improve the academic
-              performance of Grade 12 candidates in the National Senior
-              Certificate (NSC) examination.
-            </p>
-            <p>
-              The second edition of Mind the Gap is aligned to the Curriculum
-              and Assessment Policy Statement (CAPS).
-            </p>
+            <div class="read-more-content">
+              <p>
+                The Department of Basic Education has pleasure in releasing the
+                second edition of Mind the Gap study guides for Grade 12
+                learners. These study guides continue the innovative and
+                committed attempt by the Department of Basic Education to
+                improve the academic performance of Grade 12 candidates in the
+                National Senior Certificate (NSC) examination.
+              </p>
+              <p>
+                The second edition of Mind the Gap is aligned to the Curriculum
+                and Assessment Policy Statement (CAPS).
+              </p>
+            </div>
 
             <h4>English First Additional Language Study Guides</h4>
 
@@ -653,7 +655,7 @@
       </div>
     </footer>
 
-    <!-- jQuery  -->
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Bootstrap  -->
@@ -661,9 +663,6 @@
 
     <!-- Animate On Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <!-- PDFJS -->
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 
     <!-- Custom Script -->
     <script src="./js/main.js"></script>
@@ -817,6 +816,29 @@
         xml.open("GET", "./data/ebooks/book.json", true);
         xml.send();
       }
+    </script>
+
+    <script>
+      const readMoreSection = document.querySelector(
+        "#download-book-form .mind-the-gap .read-more-content"
+      );
+
+      readMoreContent = readMoreSection.innerHTML;
+      readMoreSection.innerHTML = `
+        <p>
+            The Department of Basic Education has pleasure in releasing the
+            second edition of Mind the Gap study guides for Grade 12
+            <br>
+            <a href='#'>read more</a>
+          </p>
+      `;
+
+      const readMoreBtn = readMoreSection.querySelector("a");
+      console.log(readMoreBtn);
+
+      readMoreBtn.onclick = () => {
+        readMoreSection.innerHTML = readMoreContent;
+      };
     </script>
   </body>
 </html>

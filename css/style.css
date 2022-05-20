@@ -3996,6 +3996,11 @@ section#download-book-form .mind-the-gap .table-container tr:not(:first-child) :
   text-align: left;
 }
 
+section#download-book-form .mind-the-gap .table-container tr td:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 section#download-book-form .mind-the-gap .table-container table a {
   text-decoration: none;
 }
